@@ -112,12 +112,32 @@ main {
   font-size: 25px;
 }
 
+/*category pictures in main page*/
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.category-card h3 {
+  margin-top: 10px;
+}
+
 /* footer */
 
 footer {
-  position: fixed;
-  bottom: 0;
-  height: 200px;
+  /*  height: 200px;*/
   width: 100%;
   background-color: rgb(53, 64, 36, 0.7);
 }

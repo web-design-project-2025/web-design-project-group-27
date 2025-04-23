@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "name": "Indian Food",
+      "id": 1,
+      "image": "img/indian-food.png"
+    },
+    {
+      "name": "Italian Food",
+      "id": 2,
+      "image": "img/italian-food.png"
+    },
+    {
+      "name": "American Food",
+      "id": 3,
+      "image": "img/american-food.png"
+    },
+    {
+      "name": "Asian Food",
+      "id": 4,
+      "image": "img/asian-food.png"
+    },
+    {
+      "name": "Swedish Food",
+      "id": 5,
+      "image": "img/swedish-food.png"
+    },
+    {
+      "name": "Persian Food",
+      "id": 6,
+      "image": "img/persian-food.png"
+    },
+    {
+      "name": "Greek Food",
+      "id": 7,
+      "image": "img/greek-food.png"
+    }
+  ]
+}
