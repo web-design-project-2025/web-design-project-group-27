@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Briam",
+      "image": "img/greek/briam.jpeg"
+    },
+    {
+      "name": "Greek sallad",
+      "image": "img/greek/greeksallad.jpeg"
+    },
+    {
+      "name": "Gyros",
+      "image": "img/greek/gyros.jpeg"
+    },
+    {
+      "name": "Mousakka",
+      "image": "img/greek/mousakka.jpeg"
+    },
+    {
+      "name": "Souvlaki",
+      "image": "img/greek/souvlaki.jpeg"
+    },
+    {
+      "name": "Stiftado",
+      "image": "img/greek/stiftado.jpeg"
+    }
+  ]
+}
