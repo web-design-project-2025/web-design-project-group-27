@@ -41,7 +41,7 @@ ul {
 
 .button2 {
   padding-right: 30px;
-  color: white;
+  color: #e5d7c4;
   opacity: 100%;
   font-size: 25px;
   font-family: "playfair";
@@ -89,7 +89,7 @@ main {
   color: #4c3d19;
   text-decoration: none;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 300%;
   margin-bottom: 1.5rem;
 }
 
@@ -100,14 +100,12 @@ main {
 
 .intro-text {
   color: black;
-  font-size: 25px;
+  font-size: 110%;
 }
 
 /* footer */
 
 footer {
-  position: fixed;
-  bottom: 0;
   height: 200px;
   width: 100%;
   background-color: rgb(53, 64, 36, 0.7);
@@ -123,12 +121,88 @@ footer {
 h1 {
   font-weight: 550;
   font-family: "poppins";
-  color: white;
-  padding-left: 15px;
+  color: #e5d7c4;
+  padding-left: 1%;
 }
 
 p1,
 p2 {
-  color: white;
+  color: #e5d7c4;
   font-family: "poppins";
+}
+
+.swedish-food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  padding: 4%;
+}
+
+.swedish-food-card {
+  text-align: center;
+}
+
+.swedish-food-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swedish-food-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.section-lines {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: #4c3d19;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.second-line {
+  margin-top: 1cm;
+}
+.filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  font-family: "playfair display";
+}
+
+.filter-label {
+  font-size: 20px;
+  color: #4c3d19;
+  font-weight: bold;
+}
+
+.filter-options {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.filter-options label {
+  font-size: 18px;
+  color: #4c3d19;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.filter-options input[type="checkbox"] {
+  margin-right: 6px;
+  transform: scale(1.2);
+  accent-color: #4c3d19;
 }
