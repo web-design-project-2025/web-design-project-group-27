@@ -114,10 +114,24 @@ main {
 
 /*category pictures in main page*/
 .category-grid {
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding: 20px;*/
+  /*display: flex;
+  flex-direction: row;
+  overflow: auto;
+  gap: 10px;
+  padding-left: 20px;*/
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 3rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .category-card {
@@ -125,7 +139,6 @@ main {
 }
 
 .category-card img {
-  width: 100%;
   height: auto;
   border-radius: 10px;
 }
