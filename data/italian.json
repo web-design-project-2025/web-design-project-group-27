@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Pasta Bolognes",
+      "image": "img/italian/bolognes.jpeg"
+    },
+    {
+      "name": "Calzone",
+      "image": "img/italian/calzone.jpeg"
+    },
+    {
+      "name": "Pasta Carbonara",
+      "image": "img/italian/carbonara.jpeg"
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "image": "img/italian/pepperoni.jpeg"
+    },
+    {
+      "name": "Pasta Pomodoro",
+      "image": "img/italian/pomodoro.jpeg"
+    },
+    {
+      "name": "Vesuvio pizza",
+      "image": "img/italian/vesuvio.jpeg"
+    }
+  ]
+}

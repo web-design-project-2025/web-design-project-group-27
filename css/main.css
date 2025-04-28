@@ -1,7 +1,6 @@
 body {
   background-color: #e5d7c4;
-  margin-left: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 header {
@@ -91,14 +90,6 @@ main {
   text-decoration: none;
   font-weight: 100;
   font-size: 50px;
-  margin-bottom: 1.5rem;
-}
-
-.hungry {
-  color: black;
-  font-size: 40px;
-  font-weight: 300;
-  margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
