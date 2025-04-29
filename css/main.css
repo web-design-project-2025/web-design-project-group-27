@@ -69,6 +69,11 @@ ul {
   border: 0;
 }
 
+.favourites:hover,
+.login:hover {
+  cursor: pointer;
+}
+
 .favourites-img,
 .login-img {
   width: 70%;
@@ -101,19 +106,17 @@ main {
 .intro-text {
   color: black;
   font-size: 25px;
+  font-family: "lora";
+  font-weight: 100;
+}
+
+.hungry {
+  font-weight: 400;
+  color: #4c3d19;
 }
 
 /*category pictures in main page*/
 .category-grid {
-  /*display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;*/
-  /*display: flex;
-  flex-direction: row;
-  overflow: auto;
-  gap: 10px;
-  padding-left: 20px;*/
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -121,21 +124,39 @@ main {
   padding: 1rem;
   scroll-snap-type: x mandatory;
   margin-bottom: 3rem;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .category-card {
+  background-color: transparent;
   text-align: center;
+  background: none;
 }
 
-.category-card img {
+.category-grid img {
   height: auto;
-  border-radius: 10px;
+  border-radius: 5%;
+  background: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .category-card h3 {
   margin-top: 10px;
+  font-weight: 400;
+  color: #4c3d19;
+  font-family: "poppins";
+  margin-top: 0;
+  text-align: left;
+}
+
+.category-header {
+  font-family: "lora";
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #4c3d19;
 }
 
 /* footer */
