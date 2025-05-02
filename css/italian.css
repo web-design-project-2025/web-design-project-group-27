@@ -152,6 +152,8 @@ p2 {
 .italian-food-card h3 {
   margin-top: 10px;
   font-size: 1.1rem;
+  font-family: "poppins";
+  font-weight: 400;
 }
 .section-lines {
   width: 100%;
@@ -170,6 +172,7 @@ p2 {
 
 .second-line {
   margin-top: 1cm;
+  height: 2px;
 }
 .filter-section {
   display: flex;

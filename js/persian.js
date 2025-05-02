@@ -26,7 +26,7 @@ fetch("data/persian.json")
 document.addEventListener("DOMContentLoaded", function () {
   const triviaElement = document.getElementById("foodTrivia");
 
-  const apiKey = "d0d7d273165e4880b29e660da1da3337"; // ← Replace this with your actual Spoonacular API key
+  const apiKey = "d0d7d273165e4880b29e660da1da3337";
   const url = `https://api.spoonacular.com/food/trivia/random?apiKey=${apiKey}`;
 
   fetch(url)

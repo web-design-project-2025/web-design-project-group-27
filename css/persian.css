@@ -103,6 +103,19 @@ main {
   font-size: 110%;
 }
 
+/* Random food fact */
+.random-facts {
+  font-family: "playfair display";
+  margin-left: 15px;
+  color: #4c3d19;
+}
+
+#foodTrivia {
+  font-family: "poppins";
+  margin-left: 15px;
+  font-weight: 300;
+}
+
 /* footer */
 
 footer {
@@ -151,7 +164,9 @@ p2 {
 
 .persian-food-card h3 {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1.17em;
+  font-family: "poppins";
+  font-weight: 400;
 }
 .section-lines {
   width: 100%;
@@ -161,7 +176,7 @@ p2 {
 }
 
 .line {
-  height: 2px;
+  height: 1px;
   background-color: #4c3d19;
   width: 100%;
   margin: 0;
@@ -169,7 +184,8 @@ p2 {
 }
 
 .second-line {
-  margin-top: 1cm;
+  margin-top: 1%;
+  height: 2px;
 }
 .filter-section {
   display: flex;
