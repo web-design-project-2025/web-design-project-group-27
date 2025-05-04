@@ -103,6 +103,19 @@ main {
   font-size: 110%;
 }
 
+/* Random food fact */
+.random-facts {
+  font-family: "playfair display";
+  margin-left: 15px;
+  color: #4c3d19;
+}
+
+#foodTrivia {
+  font-family: "poppins";
+  margin-left: 15px;
+  font-weight: 300;
+}
+
 /* footer */
 
 footer {
