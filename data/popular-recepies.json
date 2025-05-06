@@ -15,7 +15,7 @@
     {
       "name": "American Food",
       "id": 10,
-      "image": "img/most-popular/Breakfast-Cassarole-11-760x1140.png",
+      "image": "img/most-popular/Breakfast-Casserole.png",
       "page": "american-food.html"
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Italien Food",
       "id": 12,
-      "image": "img/most-popular/spaghetti-golognese-106560-1.png",
+      "image": "img/most-popular/spaghetti-bolognese-106560-1.png",
       "page": "italien-food.html"
     },
     {
