@@ -41,5 +41,3 @@ fetch("data/categories.json")
   .catch((error) => {
     console.error("Error loading categories:", error);
   });
-
-window.location.href = category.page; 
