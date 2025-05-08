@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Fesenjoon",
+      "image": "img/persian/fesenjoon .jpeg"
+    },
+    {
+      "name": "Gheime Bademjan",
+      "image": "img/persian/gheimebademjan.jpeg"
+    },
+    {
+      "name": "Ghorme Sabzi",
+      "image": "img/persian/ghormesabzi .jpeg"
+    },
+    {
+      "name": "Lubia Polo",
+      "image": "img/persian/lubiapolo.jpeg"
+    },
+    {
+      "name": "Polo Ba Morgh",
+      "image": "img/persian/polobamorgh .jpeg"
+    },
+    {
+      "name": "Tahchin Morgh",
+      "image": "img/persian/tahchinmorgh.jpeg"
+    }
+  ]
+}

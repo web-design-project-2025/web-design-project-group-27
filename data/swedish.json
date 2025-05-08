@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Blood Pudding",
+      "image": "img/swedish/bloodpudding.jpeg"
+    },
+    {
+      "name": "Sandwich Cake",
+      "image": "img/swedish/cake.jpeg"
+    },
+    {
+      "name": "Falu Sausage",
+      "image": "img/swedish/falu.jpeg"
+    },
+    {
+      "name": "Kalops",
+      "image": "img/swedish/kalops.jpeg"
+    },
+    {
+      "name": "Kalops",
+      "image": "img/swedish/meatballs.jpeg"
+    },
+    {
+      "name": "Pickled Herring",
+      "image": "img/swedish/pickledherring.jpeg"
+    }
+  ]
+}
