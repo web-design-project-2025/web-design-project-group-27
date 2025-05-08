@@ -1,46 +1,46 @@
 {
   "popular recepies": [
     {
-      "name": "Greek Food",
+      "name": "Greek Sallad",
       "id": 8,
       "image": "img/most-popular/greek-salad.png",
-      "page": "indian-food.html"
+      "page": "#"
     },
     {
-      "name": "Swedish Food",
+      "name": "Blood Pudding",
       "id": 9,
       "image": "img/most-popular/blood-pudding.png",
-      "page": "swedish-food.html"
+      "page": "#"
     },
     {
-      "name": "American Food",
+      "name": "Casserole",
       "id": 10,
       "image": "img/most-popular/Breakfast-Casserole.png",
-      "page": "american-food.html"
+      "page": "#"
     },
     {
-      "name": "Indian Food",
+      "name": "Palak Paneer",
       "id": 11,
       "image": "img/most-popular/PalakPaneer1280x903.jpg.png",
-      "page": "american-food.html"
+      "page": "#"
     },
     {
-      "name": "Italien Food",
+      "name": "Bolognese",
       "id": 12,
       "image": "img/most-popular/spaghetti-bolognese-106560-1.png",
-      "page": "italien-food.html"
+      "page": "#"
     },
     {
-      "name": "Persian Food",
+      "name": "Tahchin Morgh",
       "id": 13,
       "image": "img/most-popular/Tahchin-Morgh.png",
-      "page": "persian-food.html"
+      "page": "#"
     },
     {
-      "name": "Asian Food",
+      "name": "Pad Thai",
       "id": 14,
       "image": "img/most-popular/thai.png",
-      "page": "asian-food.html"
+      "page": "#"
     }
   ]
 }
