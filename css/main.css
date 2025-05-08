@@ -115,6 +115,67 @@ main {
   color: #4c3d19;
 }
 
+/* Search bar */ /* cite this as well */
+.search-box {
+  width: 600px;
+  background: white;
+  margin: 50px auto 0;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.search-button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .search-icon {
+  width: 35px;
+  cursor: pointer;
+}
+
+.result-box ul {
+  border-top: 2px solid #999;
+  padding: 15px 10px;
+  display: grid;
+  grid-row: inherit;
+  margin: 0;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "lora";
+}
+
+.result-box ul li:hover {
+  background: rgb(53, 64, 36, 0.4);
+}
+
+.result-box {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
 /*category pictures in main page*/
 .category-grid {
   display: flex;
