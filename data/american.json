@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Buffalo wings",
+      "image": "img/american/buffalo.jpeg"
+    },
+    {
+      "name": "Burger",
+      "image": "img/american/burger.jpeg"
+    },
+    {
+      "name": "Cassarole",
+      "image": "img/american/cassarole.jpeg"
+    },
+    {
+      "name": "Mac & Chees",
+      "image": "img/american/macandchees.jpeg"
+    },
+    {
+      "name": "Ribs",
+      "image": "img/american/ribs.jpeg"
+    },
+    {
+      "name": "Tacos",
+      "image": "img/american/tacos.jpeg"
+    }
+  ]
+}

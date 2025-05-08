@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Butter Chicken",
+      "image": "img/indian/butterchicken.jpeg"
+    },
+    {
+      "name": "Chana Masala",
+      "image": "img/indian/chana.jpeg"
+    },
+    {
+      "name": "Chicken Dopiaza",
+      "image": "img/indian/dopiaza.jpeg"
+    },
+    {
+      "name": "Chicken Korma",
+      "image": "img/indian/korma.jpeg"
+    },
+    {
+      "name": "Chicken Tikka Masala",
+      "image": "img/indian/masala.jpeg"
+    },
+    {
+      "name": "Palak Paneer",
+      "image": "img/indian/palak.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "name": "Spring Rolls",
+      "image": "img/asian/springrolls.jpeg"
+    },
+    {
+      "name": "Pad Thai",
+      "image": "img/asian/padthai.jpeg"
+    },
+    {
+      "name": "Nasi Goreng",
+      "image": "img/asian/nasigoreng.jpeg"
+    },
+    {
+      "name": "Fried Rice",
+      "image": "img/asian/friedrice.jpeg"
+    },
+    {
+      "name": "Chicken Cashew",
+      "image": "img/asian/cashew.jpeg"
+    },
+    {
+      "name": "Beef And Broccoli",
+      "image": "img/asian/beefandbroccoli.jpeg"
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 body {
   background-color: #e5d7c4;
-  margin-left: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 header {
@@ -70,6 +69,11 @@ ul {
   border: 0;
 }
 
+.favourites:hover,
+.login:hover {
+  cursor: pointer;
+}
+
 .favourites-img,
 .login-img {
   width: 70%;
@@ -94,14 +98,6 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.hungry {
-  color: black;
-  font-size: 40px;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
 .intro-text-container {
   margin-right: 6%;
   margin-left: 6%;
@@ -110,28 +106,118 @@ main {
 .intro-text {
   color: black;
   font-size: 25px;
+  font-family: "lora";
+  font-weight: 100;
+}
+
+.hungry {
+  font-weight: 400;
+  color: #4c3d19;
+}
+
+/* Search bar */ /* cite this as well */
+.search-box {
+  width: 600px;
+  background: white;
+  margin: 50px auto 0;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.search-button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .search-icon {
+  width: 35px;
+  cursor: pointer;
+}
+
+.result-box ul {
+  border-top: 2px solid #999;
+  padding: 15px 10px;
+  display: grid;
+  grid-row: inherit;
+  margin: 0;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "lora";
+}
+
+.result-box ul li:hover {
+  background: rgb(53, 64, 36, 0.4);
+}
+
+.result-box {
+  max-height: 150px;
+  overflow-y: scroll;
 }
 
 /*category pictures in main page*/
 .category-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
   gap: 20px;
-  padding: 20px;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 3rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .category-card {
+  background-color: transparent;
   text-align: center;
+  background: none;
 }
 
-.category-card img {
-  width: 100%;
+.category-grid img {
   height: auto;
-  border-radius: 10px;
+  border-radius: 5%;
+  background: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .category-card h3 {
   margin-top: 10px;
+  font-weight: 400;
+  color: #4c3d19;
+  font-family: "poppins";
+  margin-top: 0;
+  text-align: left;
+}
+
+.category-header {
+  font-family: "lora";
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #4c3d19;
 }
 
 /* footer */

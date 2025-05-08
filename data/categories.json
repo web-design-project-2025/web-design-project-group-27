@@ -3,37 +3,44 @@
     {
       "name": "Indian Food",
       "id": 1,
-      "image": "img/indian-food.png"
+      "image": "img/categories/indian-food.png",
+      "page": "indian-food.html"
     },
     {
       "name": "Italian Food",
       "id": 2,
-      "image": "img/italian-food.png"
+      "image": "img/categories/italian-food.png",
+      "page": "italien-food-html"
     },
     {
       "name": "American Food",
       "id": 3,
-      "image": "img/american-food.png"
+      "image": "img/categories/american-food.png",
+      "page": "american-food.html"
     },
     {
       "name": "Asian Food",
       "id": 4,
-      "image": "img/asian-food.png"
+      "image": "img/categories/asian-food.png",
+      "page": "asian-food.html"
     },
     {
       "name": "Swedish Food",
       "id": 5,
-      "image": "img/swedish-food.png"
+      "image": "img/categories/swedish-food.png",
+      "page": "swedish-food.html"
     },
     {
       "name": "Persian Food",
       "id": 6,
-      "image": "img/persian-food.png"
+      "image": "img/categories/persian-food.png",
+      "page": "persian-food.html"
     },
     {
       "name": "Greek Food",
       "id": 7,
-      "image": "img/greek-food.png"
+      "image": "img/categories/greek-food.png",
+      "page": "greek-food.html"
     }
   ]
 }
