@@ -1,26 +1,43 @@
-fetch("data/persian.json")
+fetch("data/categories.json")
   .then((response) => response.json())
   .then((data) => {
-    const container = document.getElementById("persianFoodContainer");
+    const container = document.getElementById("categoryContainer");
 
-    data.foods.forEach((food) => {
+    data.categories.forEach((category) => {
       const card = document.createElement("div");
-      card.className = "persian-food-card";
+      card.className = "category-card";
 
       const img = document.createElement("img");
-      img.src = food.image;
-      img.alt = food.name;
+      img.src = category.image;
+      img.alt = category.name;
 
       const title = document.createElement("h3");
-      title.textContent = food.name;
+      title.textContent = category.name;
 
       card.appendChild(img);
       card.appendChild(title);
+
+      card.addEventListener("click", () => {
+        let pageName =
+          category.name
+            .toLowerCase()
+            .replace(" ", "-")
+            .replace("ä", "a")
+            .replace("ö", "o") + ".html";
+
+        if (pageName === "italien-food.html") pageName = "italien-food.html";
+        if (pageName === "swedish-food.html") pageName = "swedish-food.html";
+        if (pageName === "american-food.html") pageName = "american-food.html";
+        if (pageName === "greek-food.html") pageName = "greek-food.html";
+        if (pageName === "persian-food.html") pageName = "persian-food.html";
+        if (pageName === "asian-food.html") pageName = "asian-food.html";
+        if (pageName === "indian-food.html") pageName = "indian-food.html";
+
+        window.location.href = pageName;
+      });
+
       container.appendChild(card);
     });
-  })
-  .catch((error) => {
-    console.error("Error loading Indian foods:", error);
   });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -44,3 +61,34 @@ document.addEventListener("DOMContentLoaded", function () {
       triviaElement.textContent = "Could not load trivia at the moment.";
     });
 });
+
+fetch("data/persian.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const container = document.getElementById("persianFoodContainer");
+
+    data.foods.forEach((food) => {
+      const link = document.createElement("a");
+      link.href = food.page;
+
+      const img = document.createElement("img");
+      img.src = food.image;
+      img.alt = food.name;
+
+      link.appendChild(img);
+
+      const card = document.createElement("div");
+      card.className = "persian-food-card";
+
+      card.appendChild(link);
+
+      const title = document.createElement("h3");
+      title.textContent = food.name;
+
+      card.appendChild(title);
+      container.appendChild(card);
+    });
+  })
+  .catch((error) => {
+    console.error("Error loading Persian food items:", error);
+  });

@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Blood Pudding",
-      "image": "img/swedish/bloodpudding.jpeg"
+      "image": "img/swedish/bloodpudding.jpeg",
+      "page": "bloodpudding.html"
     },
     {
       "name": "Sandwich Cake",
-      "image": "img/swedish/cake.jpeg"
+      "image": "img/swedish/cake.jpeg",
+      "page": "sandwichcake.html"
     },
     {
       "name": "Falu Sausage",
-      "image": "img/swedish/falu.jpeg"
+      "image": "img/swedish/falu.jpeg",
+      "page": "falu.html"
     },
     {
       "name": "Kalops",
-      "image": "img/swedish/kalops.jpeg"
+      "image": "img/swedish/kalops.jpeg",
+      "page": "kalops.html"
     },
     {
       "name": "Kalops",
-      "image": "img/swedish/meatballs.jpeg"
+      "image": "img/swedish/meatballs.jpeg",
+      "page": "meatballs.html"
     },
     {
       "name": "Pickled Herring",
-      "image": "img/swedish/pickledherring.jpeg"
+      "image": "img/swedish/pickledherring.jpeg",
+      "page": "pickledherring.html"
     }
   ]
 }

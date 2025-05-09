@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Briam",
-      "image": "img/greek/briam.jpeg"
+      "image": "img/greek/briam.jpeg",
+      "page": "briam.html"
     },
     {
       "name": "Greek sallad",
-      "image": "img/greek/greeksallad.jpeg"
+      "image": "img/greek/greeksallad.jpeg",
+      "page": "greeksallad.html"
     },
     {
       "name": "Gyros",
-      "image": "img/greek/gyros.jpeg"
+      "image": "img/greek/gyros.jpeg",
+      "page": "gyros.html"
     },
     {
       "name": "Mousakka",
-      "image": "img/greek/mousakka.jpeg"
+      "image": "img/greek/mousakka.jpeg",
+      "page": "mousakka.html"
     },
     {
       "name": "Souvlaki",
-      "image": "img/greek/souvlaki.jpeg"
+      "image": "img/greek/souvlaki.jpeg",
+      "page": "souvlaki.html"
     },
     {
       "name": "Stiftado",
-      "image": "img/greek/stiftado.jpeg"
+      "image": "img/greek/stiftado.jpeg",
+      "page": "stiftado.html"
     }
   ]
 }

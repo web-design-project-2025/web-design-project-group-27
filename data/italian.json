@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Pasta Bolognes",
-      "image": "img/italian/bolognes.jpeg"
+      "image": "img/italian/bolognes.jpeg",
+      "page": "bolognes.html"
     },
     {
       "name": "Calzone",
-      "image": "img/italian/calzone.jpeg"
+      "image": "img/italian/calzone.jpeg",
+      "page": "calzone.html"
     },
     {
       "name": "Pasta Carbonara",
-      "image": "img/italian/carbonara.jpeg"
+      "image": "img/italian/carbonara.jpeg",
+      "page": "carbonara.html"
     },
     {
       "name": "Pepperoni Pizza",
-      "image": "img/italian/pepperoni.jpeg"
+      "image": "img/italian/pepperoni.jpeg",
+      "page": "pepperoni.html"
     },
     {
       "name": "Pasta Pomodoro",
-      "image": "img/italian/pomodoro.jpeg"
+      "image": "img/italian/pomodoro.jpeg",
+      "page": "pomodoro.html"
     },
     {
       "name": "Vesuvio pizza",
-      "image": "img/italian/vesuvio.jpeg"
+      "image": "img/italian/vesuvio.jpeg",
+      "page": "vesuvio.html"
     }
   ]
 }

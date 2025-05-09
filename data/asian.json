@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Spring Rolls",
-      "image": "img/asian/springrolls.jpeg"
+      "image": "img/asian/springrolls.jpeg",
+      "page": "springrolls.html"
     },
     {
       "name": "Pad Thai",
-      "image": "img/asian/padthai.jpeg"
+      "image": "img/asian/padthai.jpeg",
+      "page": "padthai.html"
     },
     {
       "name": "Nasi Goreng",
-      "image": "img/asian/nasigoreng.jpeg"
+      "image": "img/asian/nasigoreng.jpeg",
+      "page": "nasigoreng.html"
     },
     {
       "name": "Fried Rice",
-      "image": "img/asian/friedrice.jpeg"
+      "image": "img/asian/friedrice.jpeg",
+      "page": "friedrice.html"
     },
     {
       "name": "Chicken Cashew",
-      "image": "img/asian/cashew.jpeg"
+      "image": "img/asian/cashew.jpeg",
+      "page": "cashwe.html"
     },
     {
       "name": "Beef And Broccoli",
-      "image": "img/asian/beefandbroccoli.jpeg"
+      "image": "img/asian/beefandbroccoli.jpeg",
+      "page": "beefandbroccoli.html"
     }
   ]
 }

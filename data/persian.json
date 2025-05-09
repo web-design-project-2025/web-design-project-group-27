@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Fesenjoon",
-      "image": "img/persian/fesenjoon .jpeg"
+      "image": "img/persian/fesenjoon .jpeg",
+      "page": "fesenjoon.html"
     },
     {
       "name": "Gheime Bademjan",
-      "image": "img/persian/gheimebademjan.jpeg"
+      "image": "img/persian/gheimebademjan.jpeg",
+      "page": "gheimebademjan.html"
     },
     {
       "name": "Ghorme Sabzi",
-      "image": "img/persian/ghormesabzi .jpeg"
+      "image": "img/persian/ghormesabzi .jpeg",
+      "page": "ghormesabzi.html"
     },
     {
       "name": "Lubia Polo",
-      "image": "img/persian/lubiapolo.jpeg"
+      "image": "img/persian/lubiapolo.jpeg",
+      "page": "lubiapolo.html"
     },
     {
       "name": "Polo Ba Morgh",
-      "image": "img/persian/polobamorgh .jpeg"
+      "image": "img/persian/polobamorgh .jpeg",
+      "page": "polobamorgh.html"
     },
     {
       "name": "Tahchin Morgh",
-      "image": "img/persian/tahchinmorgh.jpeg"
+      "image": "img/persian/tahchinmorgh.jpeg",
+      "page": "tahchinmorgh.html"
     }
   ]
 }

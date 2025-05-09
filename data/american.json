@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Buffalo wings",
-      "image": "img/american/buffalo.jpeg"
+      "image": "img/american/buffalo.jpeg",
+      "page": "buffalo.html"
     },
     {
       "name": "Burger",
-      "image": "img/american/burger.jpeg"
+      "image": "img/american/burger.jpeg",
+      "page": "burger.html"
     },
     {
       "name": "Cassarole",
-      "image": "img/american/cassarole.jpeg"
+      "image": "img/american/cassarole.jpeg",
+      "page": "cassarole.html"
     },
     {
       "name": "Mac & Chees",
-      "image": "img/american/macandchees.jpeg"
+      "image": "img/american/macandchees.jpeg",
+      "page": "macandchees.html"
     },
     {
       "name": "Ribs",
-      "image": "img/american/ribs.jpeg"
+      "image": "img/american/ribs.jpeg",
+      "page": "ribs.html"
     },
     {
       "name": "Tacos",
-      "image": "img/american/tacos.jpeg"
+      "image": "img/american/tacos.jpeg",
+      "page": "tacos.html"
     }
   ]
 }

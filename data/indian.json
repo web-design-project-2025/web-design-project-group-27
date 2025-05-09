@@ -2,27 +2,33 @@
   "foods": [
     {
       "name": "Butter Chicken",
-      "image": "img/indian/butterchicken.jpeg"
+      "image": "img/indian/butterchicken.jpeg",
+      "page": "butterchicken.html"
     },
     {
       "name": "Chana Masala",
-      "image": "img/indian/chana.jpeg"
+      "image": "img/indian/chana.jpeg",
+      "page": "chana.html"
     },
     {
       "name": "Chicken Dopiaza",
-      "image": "img/indian/dopiaza.jpeg"
+      "image": "img/indian/dopiaza.jpeg",
+      "page": "dopiaza.html"
     },
     {
       "name": "Chicken Korma",
-      "image": "img/indian/korma.jpeg"
+      "image": "img/indian/korma.jpeg",
+      "page": "korma.html"
     },
     {
       "name": "Chicken Tikka Masala",
-      "image": "img/indian/masala.jpeg"
+      "image": "img/indian/masala.jpeg",
+      "page": "masala.html"
     },
     {
       "name": "Palak Paneer",
-      "image": "img/indian/palak.jpeg"
+      "image": "img/indian/palak.jpeg",
+      "page": "palak.html"
     }
   ]
 }
