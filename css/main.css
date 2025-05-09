@@ -220,6 +220,15 @@ button .search-icon {
   color: #4c3d19;
 }
 
+.popular-header {
+  font-family: "lora";
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 1rem;
+  font-size: 25px;
+  font-weight: 200;
+  color: #4c3d19;
+}
 /* footer */
 
 footer {
