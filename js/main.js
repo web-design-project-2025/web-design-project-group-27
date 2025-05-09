@@ -117,3 +117,31 @@ function selectInput(list) {
     window.location.href = targetURL;
   }
 }
+fetch("data/popular-recepies.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const container = document.getElementById("popularContainer");
+
+    data["popular recepies"].forEach((recipe) => {
+      const card = document.createElement("div");
+      card.className = "category-card";
+
+      const img = document.createElement("img");
+      img.src = recipe.image;
+      img.alt = recipe.name;
+
+      const title = document.createElement("h3");
+      title.textContent = recipe.name;
+
+      card.appendChild(img);
+      card.appendChild(title);
+      container.appendChild(card);
+
+      card.addEventListener("click", () => {
+        window.location.href = recipe.page;
+      });
+    });
+  })
+  .catch((error) => {
+    console.error("Error loading popular recipes:", error);
+  });
