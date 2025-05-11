@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favourite Recipes</title>
-    <script src="js/favouriteRecipes.js" defer></script>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>First home page</title>
+    <link rel="stylesheet" href="css/recepies.css" />
+    <script src="js/main.js" defer></script>
+    <script src="css/asian.css"></script>
     <!-- playfair display font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,60 +70,38 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <div class="section-lines">
+        <div class="line"></div>
 
-    <main class="fr-page">
-      <!-- Previous Button -->
-      <button id="prev-btn">
-        <img class="back-pic" src="img/Arrow_left.png" alt="Back Button" />
-      </button>
+        <!-- Icon Row -->
+        <div class="icon-info">
+          <div class="icon-box">
+            <img src="img/icons/clock.png" alt="Time Icon" class="icon" />
+            <span>45</span>
+          </div>
+          <div class="icon-box">
+            <img src="img/icons/person.png" alt="Servings Icon" class="icon" />
+            <span>4</span>
+          </div>
+          <div class="icon-box">
+            <img src="img/icons/heart.png" alt="Favourite Icon" class="icon" />
+          </div>
+        </div>
 
-      <!-- Book -->
-      <div id="book" class="book">
-        <!-- paper 1 -->
-        <div id="p1" class="paper">
-          <div class="front">
-            <div id="f1" class="front-content">
-              <h1 class="content-book">Front 1</h1>
-            </div>
-          </div>
-          <div class="back">
-            <div id="b1" class="back-content">
-              <h1 class="content-book">Back 1</h1>
-            </div>
-          </div>
-        </div>
-        <!-- paper 2 -->
-        <div id="p2" class="paper">
-          <div class="front">
-            <div id="f2" class="front-content">
-              <h1 class="content-book">Front 2</h1>
-            </div>
-          </div>
-          <div class="back">
-            <div id="b2" class="back-content">
-              <h1 class="content-book">Back 2</h1>
-            </div>
-          </div>
-        </div>
-        <!-- paper 3 -->
-        <div id="p3" class="paper">
-          <div class="front">
-            <div id="f3" class="front-content">
-              <h1 class="content-book">Front 3</h1>
-            </div>
-          </div>
-          <div class="back">
-            <div id="b3" class="back-content">
-              <h1 class="content-book">Back 3</h1>
-            </div>
-          </div>
-        </div>
+        <div class="line second-line"></div>
+        <div class="vertical-line"></div>
       </div>
 
-      <!-- Next Button -->
-      <button id="next-btn">
-        <img class="next-pic" src="img/Arrow_right.png" alt="Next Button" />
-      </button>
+      <section class="recipe-columns">
+        <div class="ingredients">
+          <h2>What You’ll Need:</h2>
+        </div>
+
+        <div class="instructions">
+          <h2>Just Follow These Steps:</h2>
+        </div>
+      </section>
     </main>
 
     <footer>

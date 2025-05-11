@@ -1,0 +1,207 @@
+[
+  {
+    "id": "beefandbroccoli",
+    "category": "asian",
+    "title": "Beef And Broccoli",
+    "image": "img/asian/beefandbroccoli.jpeg",
+    "description": "Beef and Broccoli is a classic stir-fry dish made with tender beef slices, fresh broccoli, and a savory garlic soy sauce. It's quick, flavorful, and perfect served with steamed rice.",
+    "time": 45,
+    "servings": 4,
+    "ingredients": [
+      "1/2 lb flank steak, thinly sliced",
+      "2 cups broccoli florets",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tsp cornstarch",
+      "1 garlic clove, minced",
+      "1 tbsp oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Marinate beef with soy sauce, oyster sauce, and cornstarch for 15 minutes.",
+      "Blanch broccoli in boiling water for 1-2 minutes, then set aside.",
+      "Heat oil in a pan, cook garlic until fragrant.",
+      "Add beef and cook until browned.",
+      "Add broccoli and stir-fry for 2-3 minutes. Season with salt and pepper."
+    ]
+  },
+  {
+    "id": "bloodpudding",
+    "category": "swedish",
+    "title": "Blood Pudding",
+    "image": "img/swedish/bloodpudding.jpeg",
+    "description": "Swedish blood pudding (*Blodpudding*) is a traditional Nordic dish made from pig's blood, rye flour, and spices. It's typically served in slices, fried until crispy on the outside and soft inside, accompanied by lingonberry jam and boiled potatoes. A staple in many Swedish households, it's both hearty and nutritious.",
+    "time": 45,
+    "servings": 4,
+    "ingredients": [
+      "1 liter fresh pig's blood",
+      "250g rye flour",
+      "1 medium onion (grated)",
+      "100ml dark syrup (or molasses)",
+      "1 tsp ground allspice",
+      "1/2 tsp ground white pepper",
+      "1 tsp salt",
+      "Butter or oil for frying",
+      "To serve: Lingonberry jam & boiled potatoes"
+    ],
+    "instructions": [
+      "Preheat your oven to 175°C (350°F). Grease a loaf pan or blood pudding mold.",
+      "In a large bowl, mix the blood, rye flour, grated onion, syrup, salt, and spices until smooth and well combined.",
+      "Pour the mixture into the prepared pan. Cover with foil and bake for about 1 hour or until the pudding is firm and a knife inserted comes out clean.",
+      "Let it cool completely. Slice into 1-2 cm thick pieces for serving.",
+      "Fry slices in butter or oil on medium heat until crispy on the outside.",
+      "Serve hot with lingonberry jam and boiled or mashed potatoes."
+    ]
+  },
+  {
+    "id": "bolognes",
+    "category": "italian",
+    "title": "Bolognes",
+    "image": "img/italian/bolognes.jpeg",
+    "description": "Pasta Bolognese is a hearty and classic Italian dish made with slow-cooked ground meat, tomatoes, and herbs, all tossed with your favorite pasta. It's comforting, rich, and perfect for a satisfying dinner.",
+    "time": 45,
+    "servings": 4,
+    "ingredients": [
+      "400g spaghetti or pasta of choice",
+      "2 tbsp olive oil",
+      "1 onion, finely shopped",
+      "1 carrot, finely grated",
+      "500g ground beef or pork",
+      "2 tbsp tomato paste",
+      "1 can (400g) chopped tomatoes",
+      "1/2 tsp dried oregano",
+      "1/2 tsp dried basil",
+      "Salt and pepper to taste",
+      "Parmesan cheese, for serving",
+      "Fresh basil (optional, for garnish)"
+    ],
+    "instructions": [
+      "Cook pasta according to package instructions. Drain and set aside.",
+      "Heat olive oil in a large pan over medium heat. Add onions and garlic; sauté until soft.",
+      "Add grated carrot and cook for another 2-3 minutes.",
+      "Add ground meat and cook until browned.",
+      "Stir in tomato paste, canned tomatoes, oregano, and basil. Simmer for 20-30 minutes.",
+      "season with salt and pepper to taste.",
+      "Toss the sauce with cooked pasta. Top with grated Parmesan and fresh basil."
+    ]
+  },
+  {
+    "id": "butterchicken",
+    "category": "indian",
+    "title": "Butter Chicken",
+    "image": "img/indian/butterchicken.jpeg",
+    "description": "Butter Chicken, or Murgh Makhani, is a beloved Indian dish featuring tender chicken simmered in a creamy tomato-based sauce infused with aromatic spices. It's rich, flavorful, and perfect served with naan or basmati rice.",
+    "time": 45,
+    "servings": 4,
+    "ingredients": [
+      "500g boneless chicken, cubed",
+      "1 cup plain yogurt",
+      "1 tbsp lemon juice",
+      "tbsp ginger-garlic paste",
+      "1 tsp garam massala",
+      "1 tsp turmeric",
+      "1 tsp chili podwer",
+      "2 tbsp butter",
+      "1 onion, finely chopped",
+      "2 cups tomato purée",
+      "1/2 cup heavy cream",
+      "Fresh coriander for garnish"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt, lemon juice, ginger-garlic paste, turmeric, chili powder, and garam masala for at least 1 hour.",
+      "Heat butter in a pan and sauté onions until golden.",
+      "Add marinated chicken and cook until browned.",
+      "Stir in tomato purée and simmer for 15-20 minutes.",
+      "Pour in cream, season with salt, and simmer another 5-10 minutes.",
+      "Garnish with fresh coriander and serve with naan or rice."
+    ]
+  },
+  {
+    "id": "greeksallad",
+    "category": "greek",
+    "title": "Greek Sallad",
+    "image": "img/greek/greeksallad.jpeg",
+    "description": "Greek Salad is a refreshing and colorful dish made with ripe tomatoes, crisp cucumbers, red onions, olives, and feta cheese. It’s tossed with olive oil and herbs, making it a healthy and vibrant side or light meal.",
+    "time": 15,
+    "servings": 4,
+    "ingredients": [
+      "3 ripe tomatoes, chopped",
+      "1 cucumber, sliced",
+      "1/2 red onion, thinly sliced",
+      "1/2 cup Kalamata olives",
+      "200g feta cheese, cubed or crumbled",
+      "2 tbsp extra virgin olive oil",
+      "1 tbsp red wine vinegar (optional)",
+      "1 tsp dried oregano",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "In a large bowl, combine tomatoes, cucumber, onion, and olives.",
+      "Add the feta cheese on top.",
+      "Drizzle with olive oil and vinegar if using.",
+      "Sprinkle with oregano, salt, and pepper.",
+      "Toss gently to combine or leave as-is for a rustic presentation.",
+      "Serve fresh as a side dish or light lunch."
+    ]
+  },
+  {
+    "id": "macandcheese",
+    "category": "american",
+    "title": "Mac And Cheese",
+    "image": "img/american/macandcheese.jpeg",
+    "description": "Creamy, cheesy, and irresistibly comforting, this classic mac and cheese is a staple in American kitchens. Made with a rich cheese sauce and baked to golden perfection, it’s perfect as a side or a hearty main dish.",
+    "time": 45,
+    "servings": 4,
+    "ingredients": [
+      "250g elbow macaroni",
+      "2 tbsp butter",
+      "2tbsp flour",
+      "2 cups milk",
+      "1/2 tsp salt",
+      "1/4 tsp black pepper",
+      "1/4 tsp mustard powder (optional)",
+      "2 cups shredded cheddar cheese",
+      "1/2 cup breadcrumbs (optional, for topping"
+    ],
+    "instructions": [
+      "Cook macaroni according to package instructions. Drain and set aside.",
+      "In a saucepan, melt butter over medium heat. Stir in flour to make a roux.",
+      "Slowly whisk in milk. Cook until thickened, about 5-7 minutes.",
+      "Season with salt, pepper, and mustard powder if using.",
+      "Remove from heat and stir in shredded cheese until melted.",
+      "Combine cheese sauce with cooked pasta and mix well.",
+      "Pour into a greased baking dish. Top with breadcrumbs and bake at 375°F (190°C) for 20-25 minutes, until golden."
+    ]
+  },
+  {
+    "id": "tahchinmorgh",
+    "category": "persian",
+    "title": "Tahchin Morgh",
+    "image": "img/persian/tahchinmorgh.jpeg",
+    "description": "Tahchin Morgh is a stunning Persian rice cake layered with saffron-infused rice, yogurt, egg, and tender chicken. It’s baked until the bottom forms a golden, crispy crust known as *tahdig*. With its unique shape and rich flavors, Tahchin is a show-stopping dish often served at festive gatherings.",
+    "time": 45,
+    "servings": 4,
+    "ingredients": [
+      "2 cups basmati rice",
+      "2-3 chicken thighs or brests",
+      "1 large onion (chopped)",
+      "1 cup plain yogurt",
+      "1 large egg",
+      "3 tbsp saffron water (brewed saffron in hot water",
+      "3 tbsp vegetable oil or melted butter",
+      "1/2 tsp turmeric",
+      "Salt and pepper to taste",
+      "optional: Barberries and slivered pistachios for garnish"
+    ],
+    "instructions": [
+      "Rinse and soak the rice for 30 minutes. Boil in salted water until just tender. Drain and set aside.",
+      "In a pan, sauté onions in oil. Add chicken, turmeric, salt, and pepper. Cook until chicken is fully cooked, then shred.",
+      "In a large bowl, combine yogurt, egg, saffron water, and a pinch of salt. Mix well.",
+      "Add the cooked rice to the yogurt mixture and fold to combine evenly.",
+      "Grease a non-stick baking dish or pot. Spread half of the rice mixture on the bottom.",
+      "Add the shredded chicken in an even layer, then top with the remaining rice mixture.",
+      "Press down gently. Cover with foil or a lid and bake at 180°C (350°F) for 1 hour, until golden and crispy on the bottom.",
+      "Let cool slightly, then invert onto a plate. Garnish with sautéed barberries or nuts if desired."
+    ]
+  }
+]
