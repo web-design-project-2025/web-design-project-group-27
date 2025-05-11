@@ -3,32 +3,38 @@
     {
       "name": "Blood Pudding",
       "image": "img/swedish/bloodpudding.jpeg",
-      "page": "bloodpudding.html"
+      "page": "bloodpudding.html",
+      "type": "meat"
     },
     {
       "name": "Sandwich Cake",
       "image": "img/swedish/cake.jpeg",
-      "page": "sandwichcake.html"
+      "page": "sandwichcake.html",
+      "type": "fish"
     },
     {
       "name": "Falu Sausage",
       "image": "img/swedish/falu.jpeg",
-      "page": "falu.html"
+      "page": "falu.html",
+      "type": "meat"
     },
     {
       "name": "Kalops",
       "image": "img/swedish/kalops.jpeg",
-      "page": "kalops.html"
+      "page": "kalops.html",
+      "type": "meat"
     },
     {
-      "name": "Kalops",
+      "name": "Swedish Meatballs",
       "image": "img/swedish/meatballs.jpeg",
-      "page": "meatballs.html"
+      "page": "meatballs.html",
+      "type": "meat"
     },
     {
       "name": "Pickled Herring",
       "image": "img/swedish/pickledherring.jpeg",
-      "page": "pickledherring.html"
+      "page": "pickledherring.html",
+      "type": "fish"
     }
   ]
 }

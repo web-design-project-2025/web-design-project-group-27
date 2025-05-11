@@ -3,32 +3,38 @@
     {
       "name": "Buffalo wings",
       "image": "img/american/buffalo.jpeg",
-      "page": "buffalo.html"
+      "page": "buffalo.html",
+      "type": "chicken"
     },
     {
       "name": "Burger",
       "image": "img/american/burger.jpeg",
-      "page": "burger.html"
+      "page": "burger.html",
+      "type": "meat"
     },
     {
       "name": "Cassarole",
       "image": "img/american/cassarole.jpeg",
-      "page": "cassarole.html"
+      "page": "cassarole.html",
+      "type": "vegetarian"
     },
     {
       "name": "Mac & Chees",
       "image": "img/american/macandchees.jpeg",
-      "page": "macandchees.html"
+      "page": "macandchees.html",
+      "type": "vegetarian"
     },
     {
       "name": "Ribs",
       "image": "img/american/ribs.jpeg",
-      "page": "ribs.html"
+      "page": "ribs.html",
+      "type": "meat"
     },
     {
       "name": "Tacos",
       "image": "img/american/tacos.jpeg",
-      "page": "tacos.html"
+      "page": "tacos.html",
+      "type": "fish"
     }
   ]
 }
