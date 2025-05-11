@@ -43,41 +43,13 @@ fetch("data/categories.json")
   });
 
 let recipes = [
-  { name: "Chicken Tikka Massala", URL: "masala.html" },
-  { name: "Korma", URL: "korma.html" },
-  { name: "Butter Chicken", URL: "butterchicken.html" },
-  { name: "Chana Massala", URL: "chana.html" },
-  { name: "Palak Paneer", URL: "palak.html" },
-  { name: "Pasta Bolognese", URL: "bolognes.html" },
-  { name: "Pasta Carbonara", URL: "carbonara" },
-  { name: "Pasta Pomdoro", URL: "pomdoro.html" },
-  { name: "Pepperoni Pizza", URL: "pepperoni.html" },
-  { name: "Calzone", URL: "calzone.html" },
-  { name: "Vesuvio Pizza", URL: "vesuvio.html" },
-  { name: "Ribs", URL: "ribs.html" },
-  { name: "Burger", URL: "burger.html" },
-  { name: "Mac & Cheese", URL: "macandchees.html" },
-  { name: "Casserole", URL: "casserole.html" },
-  { name: "Tacos", URL: "tacos.html" },
-  { name: "Buffalo Wings", URL: "buffalo.html" },
-  { name: "Chicken Fried Rice", URL: "friedrice.html" },
-  { name: "Chicken Cashew", URL: "cashwe.html" },
-  { name: "Pad Thai", URL: "padthai.html" },
-  { name: "Nasi Goreng", URL: "nasigoreng.html" },
-  { name: "Beef & Broccoli", URL: "beefandbroccoli.html" },
-  { name: "Spring Rolls", URL: "springrolls.html" },
-  { name: "Meatballs", URL: "meatballs.html" },
-  { name: "Falu Sausage", URL: "falu.html" },
-  { name: "Blood Pudding", URL: "bloodpudding.html" },
-  { name: "Kalops", URL: "kalops.html" },
-  { name: "Pickled Herring", URL: "pickledherring.html" },
-  { name: "Sandwich Cake", URL: "sandwichcake.html" },
-  { name: "Ghorme Sabzi(stew with rice)", URL: "ghormesabzi.html" },
-  { name: "Gheime Bademjan(stew with rice", URL: "gheimebademjan.html" },
-  { name: "Tahchin Morgh", URL: "tahchinmorgh.html" },
-  { name: "Zereshk Polo Ba Morgh", URL: "polobamorgh.html" },
-  { name: "Fesenjoon", URL: "fesenjoon.html" },
-  { name: "Lubia Polo", URL: "lubiapolo.html" },
+  { name: "Butter Chicken", URL: "recipe.html?id=butterchicken" },
+  { name: "Pasta Bolognese", URL: "recipe.html?id=bolognes" },
+  { name: "Mac & Cheese", URL: "recipe.html?id=macandchees" },
+  { name: "Beef & Broccoli", URL: "recipe.html?id=beefandbroccoli" },
+  { name: "Blood Pudding", URL: "recipe.html?id=bloodpudding" },
+  { name: "Tahchin Morgh", URL: "recipe.html?id=tahchinmorgh" },
+  { name: "Greek Sallad", URL: "recipe.html?id=greeksallad" },
 ];
 
 /* serarch box */
@@ -145,3 +117,48 @@ fetch("data/popular-recepies.json")
   .catch((error) => {
     console.error("Error loading popular recipes:", error);
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  if (!id) return showError("No recipe specified.");
+
+  fetch("data/recipes.json")
+    .then((res) => res.json())
+    .then((recipes) => {
+      const r = recipes.find((x) => x.id === id);
+      if (!r) return showError("Recipe not found.");
+
+      // Populate text
+      document.getElementById("recipe-title").textContent = r.title;
+      document.getElementById("recipe-description").textContent = r.description;
+      document.getElementById("recipe-time").textContent = r.time;
+      document.getElementById("recipe-image").src = r.image;
+      document.getElementById("recipe-image").alt = r.title;
+
+      // Ingredients
+      const ulIng = document.getElementById("ingredients-list");
+      r.ingredients.forEach((i) => {
+        const li = document.createElement("li");
+        li.textContent = i;
+        ulIng.appendChild(li);
+      });
+
+      // Instructions
+      const olInst = document.getElementById("instructions-list");
+      r.instructions.forEach((step) => {
+        const li = document.createElement("li");
+        li.textContent = step;
+        olInst.appendChild(li);
+      });
+
+      // Favorites button (reuse your existing handler)
+      const favBtn = document.getElementById("favorite-btn");
+      favBtn.addEventListener("click", () => toggleFavorite(r.id));
+    })
+    .catch(() => showError("Could not load recipes."));
+});
+
+function showError(msg) {
+  document.querySelector("main").innerHTML = `<p class="error">${msg}</p>`;
+}
