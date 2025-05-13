@@ -3,32 +3,38 @@
     {
       "name": "Fesenjoon",
       "image": "img/persian/fesenjoon .jpeg",
-      "page": "fesenjoon.html"
+      "page": "fesenjoon.html",
+      "type": "meat"
     },
     {
       "name": "Gheime Bademjan",
       "image": "img/persian/gheimebademjan.jpeg",
-      "page": "gheimebademjan.html"
+      "page": "gheimebademjan.html",
+      "type": "meat"
     },
     {
       "name": "Ghorme Sabzi",
       "image": "img/persian/ghormesabzi .jpeg",
-      "page": "ghormesabzi.html"
+      "page": "ghormesabzi.html",
+      "type": "meat"
     },
     {
       "name": "Lubia Polo",
       "image": "img/persian/lubiapolo.jpeg",
-      "page": "lubiapolo.html"
+      "page": "lubiapolo.html",
+      "type": "meat"
     },
     {
       "name": "Polo Ba Morgh",
       "image": "img/persian/polobamorgh .jpeg",
-      "page": "polobamorgh.html"
+      "page": "polobamorgh.html",
+      "type": "chicken"
     },
     {
       "name": "Tahchin Morgh",
       "image": "img/persian/tahchinmorgh.jpeg",
-      "page": "tahchinmorgh.html"
+      "page": "tahchinmorgh.html",
+      "type": "chicken"
     }
   ]
 }

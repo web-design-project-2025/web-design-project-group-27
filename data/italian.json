@@ -3,32 +3,38 @@
     {
       "name": "Pasta Bolognes",
       "image": "img/italian/bolognes.jpeg",
-      "page": "bolognes.html"
+      "page": "bolognes.html",
+      "type": "meat"
     },
     {
       "name": "Calzone",
       "image": "img/italian/calzone.jpeg",
-      "page": "calzone.html"
+      "page": "calzone.html",
+      "type": "meat"
     },
     {
       "name": "Pasta Carbonara",
       "image": "img/italian/carbonara.jpeg",
-      "page": "carbonara.html"
+      "page": "carbonara.html",
+      "type": "meat"
     },
     {
       "name": "Pepperoni Pizza",
       "image": "img/italian/pepperoni.jpeg",
-      "page": "pepperoni.html"
+      "page": "pepperoni.html",
+      "type": "meat"
     },
     {
       "name": "Pasta Pomodoro",
       "image": "img/italian/pomodoro.jpeg",
-      "page": "pomodoro.html"
+      "page": "pomodoro.html",
+      "type": "vegetarian"
     },
     {
       "name": "Vesuvio pizza",
       "image": "img/italian/vesuvio.jpeg",
-      "page": "vesuvio.html"
+      "page": "vesuvio.html",
+      "type": "meat"
     }
   ]
 }
