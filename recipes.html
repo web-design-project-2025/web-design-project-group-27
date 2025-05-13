@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First home page</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/recepies.css" />
     <script src="js/main.js" defer></script>
+    <script src="css/asian.css"></script>
     <!-- playfair display font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,39 +71,39 @@
       </nav>
     </header>
     <main>
-      <div class="introduction-texts">
-        <h2 class="wtr-text">WELCOME TO RIVIA</h2>
-        <h3 class="hungry">Hungry?</h3>
-        <div class="intro-text-container">
-          <p3 class="intro-text"
-            >You have found the right place! Here you can find the best
-            precipices to save time in your everyday life. Choose between over
-            100 different meals and add them to your personalised book.</p3
-          >
+      <div class="section-lines">
+        <div class="line"></div>
+
+        <!-- Icon Row -->
+        <div class="icon-info">
+          <div class="icon-box">
+            <img src="img/icons/clock.png" alt="Time Icon" class="icon" />
+            <span>45</span>
+          </div>
+          <div class="icon-box">
+            <img src="img/icons/person.png" alt="Servings Icon" class="icon" />
+            <span>4</span>
+          </div>
+          <div class="icon-box">
+            <img src="img/icons/heart.png" alt="Favourite Icon" class="icon" />
+          </div>
         </div>
+
+        <div class="line second-line"></div>
+        <div class="vertical-line"></div>
       </div>
 
-      <div class="search-box">
-        <div class="row">
-          <input
-            type="text"
-            id="input-box"
-            placeholder="Search For Recipes"
-            autocomplete="off"
-          />
-          <button class="search-button">
-            <img class="search-icon" src="img/search-icon.png" alt="Search" />
-          </button>
+      <section class="recipe-columns">
+        <div class="ingredients">
+          <h2>What You’ll Need:</h2>
         </div>
-        <div class="result-box"></div>
-      </div>
 
-      <section class="food-categories"></section>
-      <h4 class="category-header">Food Categories:</h4>
-      <div class="category-grid" id="categoryContainer"></div>
+        <div class="instructions">
+          <h2>Just Follow These Steps:</h2>
+        </div>
+      </section>
     </main>
-    <h5 class="popular-header">Popular Recepies:</h5>
-    <div class="category-grid" id="popularContainer"></div>
+
     <footer>
       <div class="footer-div">
         <h1>Quick Links:</h1>

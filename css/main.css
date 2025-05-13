@@ -220,6 +220,15 @@ button .search-icon {
   color: #4c3d19;
 }
 
+.popular-header {
+  font-family: "lora";
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 1rem;
+  font-size: 25px;
+  font-weight: 200;
+  color: #4c3d19;
+}
 /* footer */
 
 footer {
@@ -247,30 +256,4 @@ p2 {
   color: #e5d7c4;
   font-family: "poppins";
 }
-.team-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
 
-.team-member {
-  text-align: center;
-}
-
-.team-member img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-section {
-  color: #4c3d19;
-  width: 100%;
-  text-align: center;
-  font-family: "playfair display";
-}
