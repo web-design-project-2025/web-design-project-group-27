@@ -229,6 +229,10 @@ button .search-icon {
   font-weight: 200;
   color: #4c3d19;
 }
+
+.icon:hover {
+  cursor: pointer;
+}
 /* footer */
 
 footer {
