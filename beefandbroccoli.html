@@ -30,16 +30,22 @@
             <li class="button2">About Us</li>
           </a>
           <div class="header-buttons">
-            <button class="favourites">
-              <img
-                class="favourites-img"
-                src="img/favourites-img.png"
-                alt="Favourite Recipes"
-              />
-            </button>
-            <button class="login">
-              <img class="login-img" src="img/login-img.png" alt="Login" />
-            </button>
+            <a href="favourite-recipes.html"
+              ><button class="favourites">
+                <img
+                  class="favourites-img"
+                  src="img/favourites-img.png"
+                  alt="Favourite Recipes"
+                /></button
+            ></a>
+            <a href="login.html">
+              <button class="login">
+                <img
+                  class="login-img"
+                  src="img/login-img.png"
+                  alt="Login"
+                /></button
+            ></a>
           </div>
         </ul>
       </nav>
@@ -78,15 +84,14 @@
           </div>
           <div class="icon-box">
             <button
-              class="add-to-favourites"
-              data-name="Recipe Name"
-              data-image="images/recipe.jpg"
-              data-page="recipe1.html"
+              id="favorite-btn"
+              class="favourites"
+              title="Add to favorites"
             >
               <img
                 src="img/icons/heart.png"
                 alt="Favourite Icon"
-                class="icon"
+                class="favourites-img"
               />
             </button>
           </div>

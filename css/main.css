@@ -202,6 +202,10 @@ button .search-icon {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+img:hover {
+  cursor: pointer;
+}
+
 .category-card h3 {
   margin-top: 10px;
   font-weight: 400;
@@ -261,7 +265,7 @@ p2 {
   font-family: "poppins";
 }
 
-/* Favourite Book Page */
+/* Favourite Recipes Page */
 
 .fr-page {
   height: 100vh;
@@ -271,97 +275,35 @@ p2 {
   font-family: "playfair";
 }
 
-/* Book */
-.book {
-  position: relative;
-  width: 350px;
-  height: 500px;
-  transition: transform 0.5s;
+.fav-heading {
+  color: #4c3d19;
 }
 
-.paper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  perspective: 2000px;
+.fav-rec-name {
+  color: #4c3d19;
+  text-decoration-color: transparent;
+  font-size: 1.17em;
+  margin-top: 10px;
+  font-weight: 400;
+  font-family: "poppins";
+  margin-top: 0;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.content-book {
-  color: black;
+.favourite-image {
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 260px;
 }
-
-.front,
-.back {
-  background-color: white;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform-origin: left;
-  transition: transform 1s;
-}
-
-.front {
-  z-index: 1;
-  backface-visibility: hidden;
-  border-left: 3px solid #e5d7c4;
-}
-
-.back {
-  z-index: 0;
-}
-
-.front-content,
-.back-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.back-content {
-  transform: rotateY(180deg);
-}
-
-/* Paper Flip Effect */
-.flipped .front,
-.flipped .back {
-  transform: rotateY(-180deg);
-}
-
-/* Controller Buttons */
-button {
-  border: none;
+.remove-btn {
   background-color: transparent;
-  padding: 20px;
-  cursor: pointer;
-  margin: 10px;
-  transition: transform 0.5s;
+  border-width: 0;
+  font-family: "poppins";
+  font-size: 15px;
 }
 
-button:focus {
-  outline: none;
-}
-
-.back-pic,
-.next-pic {
-  width: 30px;
-}
-
-/* Paper Stack Order */
-
-#p1 {
-  z-index: 3;
-}
-
-#p2 {
-  z-index: 2;
-}
-
-#p3 {
-  z-index: 1;
+.name-container {
+  text-decoration: none;
 }

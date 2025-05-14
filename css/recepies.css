@@ -120,15 +120,10 @@ ul {
 .remove-btn {
   margin-top: 10px;
   padding: 6px 12px;
-  background-color: #ff4d4d;
-  color: white;
+  color: #4c3d19;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.remove-btn:hover {
-  background-color: #cc0000;
 }
 
 /* main body */
@@ -182,8 +177,8 @@ footer {
 h1 {
   font-weight: 550;
   font-family: "poppins";
-  color: #e5d7c4;
   padding-left: 15px;
+  color: #e5d7c4;
 }
 
 p1,

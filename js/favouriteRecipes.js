@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     card.classList.add("favourite-card");
 
     card.innerHTML = `
-      <a href="${recipe.page}">
+      <a href="${recipe.page}" class = "name-container">
         <img src="${recipe.image}" alt="${recipe.name}" class="favourite-image"/>
-        <h3>${recipe.name}</h3>
+        <h3 class = "fav-rec-name">${recipe.name}</h3>
       </a>
       <button class="remove-btn" data-index="${index}">Remove</button>
     `;
