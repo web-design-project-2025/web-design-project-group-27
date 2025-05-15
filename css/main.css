@@ -41,7 +41,7 @@ ul {
 
 .button2 {
   padding-right: 30px;
-  color: white;
+  color: #e5d7c4;
   opacity: 100%;
   font-size: 25px;
   font-family: "playfair";
@@ -255,13 +255,13 @@ footer {
 h1 {
   font-weight: 550;
   font-family: "poppins";
-  color: white;
+  color: #e5d7c4;
   padding-left: 15px;
 }
 
 p1,
 p2 {
-  color: white;
+  color: #e5d7c4;
   font-family: "poppins";
 }
 
@@ -307,3 +307,5 @@ p2 {
 .name-container {
   text-decoration: none;
 }
+
+

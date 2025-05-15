@@ -3,32 +3,38 @@
     {
       "name": "Butter Chicken",
       "image": "img/indian/butterchicken.jpeg",
-      "page": "butterchicken.html"
+      "page": "butterchicken.html",
+      "type": "chicken"
     },
     {
       "name": "Chana Masala",
       "image": "img/indian/chana.jpeg",
-      "page": "chana.html"
+      "page": "chana.html",
+      "type": "vegetarian"
     },
     {
       "name": "Chicken Dopiaza",
       "image": "img/indian/dopiaza.jpeg",
-      "page": "dopiaza.html"
+      "page": "dopiaza.html",
+      "type": "chicken"
     },
     {
       "name": "Chicken Korma",
       "image": "img/indian/korma.jpeg",
-      "page": "korma.html"
+      "page": "korma.html",
+      "type": "chicken"
     },
     {
       "name": "Chicken Tikka Masala",
       "image": "img/indian/masala.jpeg",
-      "page": "masala.html"
+      "page": "masala.html",
+      "type": "chicken"
     },
     {
       "name": "Palak Paneer",
       "image": "img/indian/palak.jpeg",
-      "page": "palak.html"
+      "page": "palak.html",
+      "type": "vegetarian"
     }
   ]
 }

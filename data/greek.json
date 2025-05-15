@@ -3,32 +3,38 @@
     {
       "name": "Briam",
       "image": "img/greek/briam.jpeg",
-      "page": "briam.html"
+      "page": "briam.html",
+      "type": "vegetarian"
     },
     {
       "name": "Greek sallad",
       "image": "img/greek/greeksallad.jpeg",
-      "page": "greeksallad.html"
+      "page": "greeksallad.html",
+      "type": "vegetarian"
     },
     {
       "name": "Gyros",
       "image": "img/greek/gyros.jpeg",
-      "page": "gyros.html"
+      "page": "gyros.html",
+      "type": "meat"
     },
     {
       "name": "Mousakka",
       "image": "img/greek/mousakka.jpeg",
-      "page": "mousakka.html"
+      "page": "mousakka.html",
+      "type": "meat"
     },
     {
       "name": "Souvlaki",
       "image": "img/greek/souvlaki.jpeg",
-      "page": "souvlaki.html"
+      "page": "souvlaki.html",
+      "type": "chicken"
     },
     {
       "name": "Stiftado",
       "image": "img/greek/stiftado.jpeg",
-      "page": "stiftado.html"
+      "page": "stiftado.html",
+      "type": "meat"
     }
   ]
 }

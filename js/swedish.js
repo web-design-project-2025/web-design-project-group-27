@@ -62,33 +62,67 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+let allFoods = [];
+
+function renderFoods(foods) {
+  const container = document.getElementById("swedishFoodContainer");
+  container.innerHTML = "";
+
+  if (foods.length === 0) {
+    container.innerHTML = "<p>No items match your filter.</p>";
+    return;
+  }
+
+  foods.forEach((food) => {
+    const link = document.createElement("a");
+    link.href = food.page;
+
+    const img = document.createElement("img");
+    img.src = food.image;
+    img.alt = food.name;
+
+    link.appendChild(img);
+
+    const card = document.createElement("div");
+    card.className = "swedish-food-card";
+
+    card.appendChild(link);
+
+    const title = document.createElement("h3");
+    title.textContent = food.name;
+
+    card.appendChild(title);
+    container.appendChild(card);
+  });
+}
+
+function getSelectedFilters() {
+  const checked = document.querySelectorAll('input[name="filter"]:checked');
+  return Array.from(checked).map((checkbox) => checkbox.value);
+}
+
+function applyFilter() {
+  const selected = getSelectedFilters();
+
+  if (selected.length === 0) {
+    renderFoods(allFoods);
+  } else {
+    const filtered = allFoods.filter((food) => selected.includes(food.type));
+    renderFoods(filtered);
+  }
+}
+
 fetch("data/swedish.json")
   .then((response) => response.json())
   .then((data) => {
-    const container = document.getElementById("swedishFoodContainer");
+    allFoods = data.foods;
+    renderFoods(allFoods);
 
-    data.foods.forEach((food) => {
-      const link = document.createElement("a");
-      link.href = food.page;
-
-      const img = document.createElement("img");
-      img.src = food.image;
-      img.alt = food.name;
-
-      link.appendChild(img);
-
-      const card = document.createElement("div");
-      card.className = "swedish-food-card";
-
-      card.appendChild(link);
-
-      const title = document.createElement("h3");
-      title.textContent = food.name;
-
-      card.appendChild(title);
-      container.appendChild(card);
+    const checkboxes = document.querySelectorAll('input[name="filter"]');
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", applyFilter);
     });
   })
   .catch((error) => {
-    console.error("Error loading Swedish food items:", error);
+    console.error("Error loading food items:", error);
   });
