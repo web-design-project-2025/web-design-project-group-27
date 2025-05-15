@@ -85,13 +85,6 @@ ul {
   text-align: center;
 }
 
-.favourites-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
 .favourite-card {
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -108,7 +101,9 @@ ul {
 .favourite-card img {
   width: 100%;
   height: auto;
-  display: block;
+  /*   display: block;
+ */
+  border-bottom: 1px solid #eee;
 }
 
 .favourite-card h3 {

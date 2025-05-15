@@ -40,48 +40,72 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <a class="button1" href="index.html"
-            ><img
-              class="rivia-logo"
-              src="img/WDP Logo (RIVIA Recipes).png"
-              alt="RIVIA Logo"
-          /></a>
-          <a class="header-options1" href="about-us.html">
-            <li class="button2">About Us</li>
-          </a>
-          <div class="header-buttons">
-            <a href="favourite-recipes.html"
-              ><button class="favourites">
-                <img
-                  class="favourites-img"
-                  src="img/favourites-img.png"
-                  alt="Favourite Recipes"
-                /></button
-            ></a>
-            <a href="login.html">
-              <button class="login">
-                <img class="login-img" src="img/login-img.png" alt="Login" />
-              </button>
-            </a>
-          </div>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <nav>
+          <nav>
+            <ul>
+              <a class="button1" href="index.html"
+                ><img
+                  class="rivia-logo"
+                  src="img/WDP Logo (RIVIA Recipes).png"
+                  alt="RIVIA Logo"
+              /></a>
+              <a class="header-options1" href="about-us.html">
+                <li class="button2">About Us</li>
+              </a>
+              <div class="header-buttons">
+                <a href="favourite-recipes.html"
+                  ><button class="favourites">
+                    <img
+                      class="favourites-img"
+                      src="img/favourites-img.png"
+                      alt="Favourite Recipes"
+                    /></button
+                ></a>
+                <a href="login.html">
+                  <button class="login">
+                    <img
+                      class="login-img"
+                      src="img/login-img.png"
+                      alt="Login"
+                    />
+                  </button>
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </nav>
+      </div>
     </header>
-
-    <main>
-      <h1 class="fav-heading">My favourite Recipes:</h1>
-      <div id="favourites-container" class="favourites-grid"></div>
-    </main>
+    <div class="page-container">
+      <main>
+        <h1 class="fav-heading">My favourite Recipes:</h1>
+        <div id="favourites-container"></div>
+      </main>
+    </div>
 
     <footer>
-      <div class="footer-div">
-        <h1>Quick Links:</h1>
-        <a class="footer-options" href="about-us.html"><p1>About Us</p1></a>
-        <a class="footer-options" href="popular-recipes.html"
-          ><p2>Popular Recipes</p2></a
-        >
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-div">
+            <h1>Quick Links:</h1>
+            <a class="footer-options" href="about-us.html"><p1>About Us</p1></a>
+            <a class="footer-options" href="popular-recipes.html"
+              ><p2>Popular Recipes</p2></a
+            >
+          </div>
+
+          <div class="footer-div">
+            <h1>Contact Information:</h1>
+            <p class="contact-info">Gmail: rivia.recipes@gmail.com</p>
+            <p class="contact-info">Phone: +46 70 123 45 67</p>
+          </div>
+          <div class="footer-div">
+            <h1>Contact Information:</h1>
+            <p class="socials-info">Gmail: rivia.recipes@gmail.com</p>
+            <p class="socials-info">Phone: +46 70 123 45 67</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,0 +1,133 @@
+@keyframes wiggle {
+  0%,
+  70% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.brand-name {
+  color: rgb(255, 14, 139);
+  display: block;
+}
+
+.alpsLogo {
+  width: 100%;
+  margin-left: 0;
+}
+
+.main-header {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-options {
+  font-size: 20px;
+  padding-left: 10px;
+  color: rgb(113, 113, 113);
+  padding-left: 30px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+/* content */
+.signIn-form {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.sign-in-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.fname-box,
+.lname-box,
+.email-box,
+.tNumber-box,
+.password-box,
+.Cpassword-box {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.SU-button {
+  border-radius: 10px;
+  background-color: rgb(53, 64, 36, 0.7);
+  display: block;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: large;
+  margin-bottom: 20px;
+  color: #e5d7c4;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.su {
+  width: 100%;
+}
+
+/* transitions at when the user is signed in */
+
+.fade-out {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fade-in {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.signIn-form {
+  transition: all 0.5s ease-in-out;
+}
+
+#submittedMessage {
+  display: none;
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  color: rgb(53, 64, 36, 0.7);
+  padding-top: 30px;
+  padding-bottom: 400px;
+}
+
+footer {
+  max-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}

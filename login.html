@@ -3,7 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>First home page</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/login.js" defer></script>
+    <!-- playfair display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- playfair font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- poppins font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lora font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav>
+          <nav>
+            <ul>
+              <a class="button1" href="index.html"
+                ><img
+                  class="rivia-logo"
+                  src="img/WDP Logo (RIVIA Recipes).png"
+                  alt="RIVIA Logo"
+              /></a>
+              <a class="header-options1" href="about-us.html">
+                <li class="button2">About Us</li>
+              </a>
+              <div class="header-buttons">
+                <a href="favourite-recipes.html"
+                  ><button class="favourites">
+                    <img
+                      class="favourites-img"
+                      src="img/favourites-img.png"
+                      alt="Favourite Recipes"
+                    /></button
+                ></a>
+                <a href="login.html">
+                  <button class="login">
+                    <img
+                      class="login-img"
+                      src="img/login-img.png"
+                      alt="Login"
+                    />
+                  </button>
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div class="page-container">
+      <main>
+        <div class="sign-in-main">
+          <form action="#" class="signIn-form">
+            <label for="fname" class="fname">First Name:</label>
+            <input
+              id="fname"
+              class="fname-box"
+              type="text"
+              name="Your First Name"
+              placeholder="Your First Name..."
+              style="color: black"
+              required
+            />
+            <br />
+            <label for="lname" class="lname">Last Name:</label>
+            <input
+              id="lname"
+              class="lname-box"
+              type="text"
+              name="Your Last Name"
+              placeholder="Your Last Name..."
+              style="color: black"
+              required
+            />
+            <br />
+            <label for="Email" class="email">Email Adress:</label>
+            <input
+              class="email-box"
+              type="email"
+              name="Email"
+              placeholder="Your Email..."
+              style="color: black"
+              required
+            />
+            <br />
+            <label for="Phone-number" class="tNumber">Phone Number:</label>
+            <input
+              class="tNumber-box"
+              type="number"
+              name="Phone-number"
+              placeholder="Your Phone Number..."
+              style="color: black"
+              required
+            />
+            <br />
+            <label for="Password" class="password">Choose a Password:</label>
+            <input
+              class="password-box"
+              type="text"
+              name="password"
+              placeholder="Your Password..."
+              style="color: black"
+              required
+            />
+            <br />
+            <label for="Cpassword" class="Cpassword"
+              >Confirm Your Password:</label
+            >
+            <input
+              class="Cpassword-box"
+              type="text"
+              name="Cpassword"
+              placeholder="Confirm Your Password..."
+              style="color: black"
+              required
+            />
+            <br />
+            <div class="su">
+              <button type="submit" class="SU-button">Sign In</button>
+            </div>
+          </form>
+        </div>
+
+        <div
+          id="submittedMessage"
+          class="fade-in"
+          style="display: none; opacity: 0"
+        ></div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-div">
+            <h1>Quick Links:</h1>
+            <a class="footer-options" href="about-us.html"><p1>About Us</p1></a>
+            <a class="footer-options" href="popular-recipes.html"
+              ><p2>Popular Recipes</p2></a
+            >
+          </div>
+
+          <div class="footer-div">
+            <h1>Contact Information:</h1>
+            <p class="contact-info">Gmail: rivia.recipes@gmail.com</p>
+            <p class="contact-info">Phone: +46 70 123 45 67</p>
+          </div>
+          <div class="footer-div">
+            <h1>Contact Information:</h1>
+            <p class="socials-info">Gmail: rivia.recipes@gmail.com</p>
+            <p class="socials-info">Phone: +46 70 123 45 67</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
