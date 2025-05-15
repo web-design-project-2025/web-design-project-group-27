@@ -2,18 +2,21 @@ body {
   background-color: #e5d7c4;
   margin: 0;
 }
-
+.page-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 header {
-  display: flex;
-  align-items: center;
   position: fixed;
-  overflow: hidden;
-  margin-top: 0;
+  top: 0;
   z-index: 1;
   background-color: rgb(53, 64, 36, 0.7);
   width: 100%;
 }
-
+.page-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .header-options {
   list-style: none;
   text-align: left;
@@ -21,40 +24,44 @@ header {
 }
 
 .header-options1 {
-  list-style: none;
-  text-align: left;
-  padding-left: 30px;
+  margin-left: auto;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-
+.header-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 ul {
-  font-family: "playfair";
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  font-family: "playfair";
   padding-left: 0;
+  list-style: none;
 }
 
 .rivia-logo {
-  padding-left: 15px;
   width: 100px;
 }
 
 .button2 {
-  padding-right: 30px;
   color: #e5d7c4;
-  opacity: 100%;
   font-size: 25px;
   font-family: "playfair";
-  position: absolute;
-  right: 130px;
-  top: 32.5px;
 }
 
 .header-buttons {
   display: flex;
-  position: fixed;
-  right: 0;
-  padding-right: 10px;
+  gap: 10px;
 }
 
 .favourites,
@@ -62,11 +69,12 @@ ul {
   background-color: #e5d7c4;
   border-radius: 20%;
   padding: 0;
-  margin-left: 10px;
   align-items: center;
   height: 55.4px;
   width: 55.4px;
-  border: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
 }
 
 .favourites-img,
@@ -119,23 +127,51 @@ main {
 /* footer */
 
 footer {
-  height: 200px;
   width: 100%;
   background-color: rgb(53, 64, 36, 0.7);
 }
 
-.footer-options {
-  display: grid;
-  grid-template-rows: repeat(3, 0.5fr);
-  padding-left: 15px;
-  text-decoration: none;
+.footer-container {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
+.footer-columns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 100px;
+  text-align: left;
+}
+
+.footer-div {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 0 50px;
+  padding-bottom: 20px;
+}
+
+.footer-options,
+.contact-info,
+.socials-info {
+  font-family: "poppins";
+  color: #e5d7c4;
+  text-decoration: none;
+  display: block;
+  padding-left: 15px;
+  margin: 5px 0;
+}
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
 h1 {
+  font-size: x-large;
   font-weight: 550;
   font-family: "poppins";
   color: #e5d7c4;
-  padding-left: 1%;
 }
 
 p1,

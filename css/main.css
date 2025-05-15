@@ -249,7 +249,6 @@ img:hover {
 /* footer */
 
 footer {
-  /*  height: 200px;*/
   width: 100%;
   background-color: rgb(53, 64, 36, 0.7);
 }
@@ -331,14 +330,18 @@ p2 {
 
 .footer-columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 100px;
+  text-align: left;
 }
 
 .footer-div {
   flex: 1;
   min-width: 200px;
+  max-width: 300px;
+  padding: 0 50px;
+  padding-bottom: 20px;
 }
 
 .footer-options,
@@ -350,9 +353,14 @@ p2 {
   display: block;
   padding-left: 15px;
   margin: 5px 0;
-  padding-bottom: 30px;
+}
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
 }
 h1 {
+  font-size: x-large;
   font-weight: 550;
   font-family: "poppins";
   color: #e5d7c4;
