@@ -390,3 +390,49 @@ h1 {
   font-family: "poppins";
   color: #e5d7c4;
 }
+.intro-text::first-letter {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding-right: 8px;
+  color: #4c3d19;
+  font-family: "Playfair Display", serif;
+}
+.category-header,
+.popular-header {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-style: italic;
+  color: #3b2e13;
+  border-bottom: 2px solid #a08b65;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+.quote-block {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #4c3d19;
+  border-left: 4px solid #a08b65;
+  padding-left: 16px;
+  margin: 2rem 0;
+}
+.team-member img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-member p {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #3b2e13;
+  margin-top: 10px;
+}
+.about-section {
+  padding: 2rem 0;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}

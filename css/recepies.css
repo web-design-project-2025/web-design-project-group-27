@@ -2,6 +2,10 @@ body {
   background-color: #e5d7c4;
   margin: 0;
 }
+.page-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 header {
   position: fixed;
   top: 0;
@@ -292,8 +296,7 @@ p2 {
 }
 
 .recepie-text-container {
-  margin-right: 6%;
-  margin-left: 6%;
+  text-align: center;
 }
 
 .second-text {
