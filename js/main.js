@@ -1,46 +1,39 @@
-fetch("data/categories.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const container = document.getElementById("categoryContainer");
+const categoryContainer = document.getElementById("categoryContainer");
+if (categoryContainer) {
+  fetch("data/categories.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.categories.forEach((category) => {
+        const card = document.createElement("div");
+        card.className = "category-card";
 
-    data.categories.forEach((category) => {
-      const card = document.createElement("div");
-      card.className = "category-card";
+        const img = document.createElement("img");
+        img.src = category.image;
+        img.alt = category.name;
 
-      const img = document.createElement("img");
-      img.src = category.image;
-      img.alt = category.name;
+        const title = document.createElement("h3");
+        title.textContent = category.name;
 
-      const title = document.createElement("h3");
-      title.textContent = category.name;
+        card.appendChild(img);
+        card.appendChild(title);
+        categoryContainer.appendChild(card);
 
-      card.appendChild(img);
-      card.appendChild(title);
-      container.appendChild(card);
+        card.addEventListener("click", () => {
+          let pageName =
+            category.name
+              .toLowerCase()
+              .replace(" ", "-")
+              .replace("ä", "a")
+              .replace("ö", "o") + ".html";
 
-      card.addEventListener("click", () => {
-        let pageName =
-          category.name
-            .toLowerCase()
-            .replace(" ", "-")
-            .replace("ä", "a")
-            .replace("ö", "o") + ".html";
-
-        if (pageName === "italien-food.html") pageName = "italien-food.html";
-        if (pageName === "swedish-food.html") pageName = "swedish-food.html";
-        if (pageName === "american-food.html") pageName = "american-food.html";
-        if (pageName === "greek-food.html") pageName = "greek-food.html";
-        if (pageName === "persian-food.html") pageName = "persian-food.html";
-        if (pageName === "asian-food.html") pageName = "asian-food.html";
-        if (pageName === "indian-food.html") pageName = "indian-food.html";
-
-        window.location.href = pageName;
+          window.location.href = pageName;
+        });
       });
+    })
+    .catch((error) => {
+      console.error("Error loading categories:", error);
     });
-  })
-  .catch((error) => {
-    console.error("Error loading categories:", error);
-  });
+}
 
 let recipes = [
   { name: "Butter Chicken", URL: "recipe.html?id=butterchicken" },
@@ -56,21 +49,22 @@ let recipes = [
 const resultBox = document.querySelector(".result-box");
 const inputBox = document.getElementById("input-box");
 
-inputBox.onkeyup = function () {
-  let result = [];
-  let input = inputBox.value;
-  if (input.length) {
-    result = recipes.filter((recipe) => {
-      return recipe.name.toLowerCase().includes(input.toLowerCase());
-    });
-    console.log(result);
-  }
-  display(result);
+if (inputBox) {
+  inputBox.onkeyup = function () {
+    let result = [];
+    let input = inputBox.value;
+    if (input.length) {
+      result = recipes.filter((recipe) => {
+        return recipe.name.toLowerCase().includes(input.toLowerCase());
+      });
+    }
+    display(result);
 
-  if (!result.length) {
-    resultBox.innerHTML = "";
-  }
-};
+    if (!result.length) {
+      resultBox.innerHTML = "";
+    }
+  };
+}
 
 function display(result) {
   const content = result.map((recipe) => {
@@ -117,3 +111,65 @@ fetch("data/popular-recepies.json")
   .catch((error) => {
     console.error("Error loading popular recipes:", error);
   });
+
+/* add to favourite */
+/* document.addEventListener("DOMContentLoaded", function () {
+  const favButton = document.getElementById("favorite-btn");
+
+  if (favButton) {
+    favButton.addEventListener("click", function () {
+      const imageSrc = document.querySelector(".hero-image img")?.src;
+      const title = document.querySelector(".first-text")?.textContent;
+      const pageUrl = window.location.href;
+
+      if (!imageSrc || !title) {
+        alert("Error: Could not find recipe data.");
+        return;
+      }
+
+      const favourite = {
+        image: imageSrc,
+        title: title,
+        url: pageUrl,
+      };
+
+      let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
+      const exists = favourites.some((item) => item.url === pageUrl);
+      if (exists) {
+        alert("Recipe already in your favourites!");
+        return;
+      }
+
+      favourites.push(favourite);
+      localStorage.setItem("favourites", JSON.stringify(favourites));
+      alert("Recipe added to your favourites!");
+    });
+  }
+}); */
+
+document.getElementById("favorite-btn")?.addEventListener("click", () => {
+  toggleFavorite();
+});
+function toggleFavorite(recipeId) {
+  // Adjust this to match your recipe page setup
+  const image = document.querySelector(".full-width-image")?.src;
+  const name = document.querySelector(".first-text")?.textContent;
+  const page = window.location.pathname;
+
+  if (!image || !name || !page) {
+    alert("Could not save recipe. Missing information.");
+    return;
+  }
+
+  let favourites = JSON.parse(localStorage.getItem("favouriteRecipes")) || [];
+
+  // Check for duplicates
+  const exists = favourites.some((r) => r.page === page);
+  if (!exists) {
+    favourites.push({ image, name, page });
+    localStorage.setItem("favouriteRecipes", JSON.stringify(favourites));
+    alert("Recipe added to favourites!");
+  } else {
+    alert("Recipe is already in favourites.");
+  }
+}
