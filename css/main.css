@@ -45,6 +45,8 @@ ul {
   font-family: "playfair";
   padding-left: 0;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .rivia-logo {
@@ -120,21 +122,20 @@ main {
 
 /* Search bar */ /* cite this as well */
 .search-box {
-  width: 600px;
+  width: 40%;
   background: white;
-  /*   margin: 50px auto 0;
- */
   border-radius: 5px;
-  margin-left: 22.5%;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  /*   margin-right: 10%;
- */
+  margin-left: 25%;
 }
 
 .row {
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  position: relative;
 }
 
 input {
@@ -158,30 +159,48 @@ button .search-icon {
   cursor: pointer;
 }
 
-.result-box ul {
+.result-box li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   border-top: 2px solid #999;
-  padding: 15px 10px;
   display: grid;
   grid-row: inherit;
-  margin: 0;
+  padding: 0;
 }
 
-.result-box ul li {
-  list-style: none;
-  border-radius: 3px;
+.result-box ul li,
+.search-result {
   padding: 15px 10px;
   cursor: pointer;
   font-size: 18px;
   font-family: "lora";
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
 }
 
-.result-box ul li:hover {
+.search-result {
+  margin-right: 100%;
+}
+
+.result-box li ul:hover {
   background: rgb(53, 64, 36, 0.4);
 }
 
 .result-box {
-  max-height: 150px;
-  overflow-y: scroll;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 /*category pictures in main page*/
@@ -310,6 +329,12 @@ p2 {
   border-width: 0;
   font-family: "poppins";
   font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.remove-btn:hover {
+  background-color: rgb(53, 64, 36, 0.7);
 }
 
 #favourites-container {
