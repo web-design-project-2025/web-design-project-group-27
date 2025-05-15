@@ -12,7 +12,8 @@ header {
 }
 .page-container {
   margin-left: 10%;
-  margin-right: 10%;
+  /*   margin-right: 10%;
+ */
 }
 .header-options {
   list-style: none;
@@ -96,10 +97,11 @@ main {
   font-weight: 100;
   font-size: 50px;
   margin-bottom: 1.5rem;
+  margin-right: 10%;
 }
 
 .intro-text-container {
-  margin-right: 6%;
+  margin-right: 16%;
   margin-left: 6%;
 }
 
@@ -113,14 +115,20 @@ main {
 .hungry {
   font-weight: 400;
   color: #4c3d19;
+  margin-right: 10%;
 }
 
 /* Search bar */ /* cite this as well */
 .search-box {
   width: 600px;
   background: white;
-  margin: 50px auto 0;
+  /*   margin: 50px auto 0;
+ */
   border-radius: 5px;
+  margin-left: 22.5%;
+  margin-top: 50px;
+  /*   margin-right: 10%;
+ */
 }
 
 .row {
@@ -187,6 +195,7 @@ button .search-icon {
   margin-bottom: 3rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  margin-right: 0;
 }
 
 .category-card {
@@ -301,6 +310,13 @@ p2 {
   border-width: 0;
   font-family: "poppins";
   font-size: 15px;
+}
+
+#favourites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .name-container {
