@@ -202,6 +202,10 @@ button .search-icon {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+img:hover {
+  cursor: pointer;
+}
+
 .category-card h3 {
   margin-top: 10px;
   font-weight: 400;
@@ -228,6 +232,10 @@ button .search-icon {
   font-size: 25px;
   font-weight: 200;
   color: #4c3d19;
+}
+
+.icon:hover {
+  cursor: pointer;
 }
 /* footer */
 
@@ -256,4 +264,48 @@ p2 {
   color: #e5d7c4;
   font-family: "poppins";
 }
+
+/* Favourite Recipes Page */
+
+.fr-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "playfair";
+}
+
+.fav-heading {
+  color: #4c3d19;
+}
+
+.fav-rec-name {
+  color: #4c3d19;
+  text-decoration-color: transparent;
+  font-size: 1.17em;
+  margin-top: 10px;
+  font-weight: 400;
+  font-family: "poppins";
+  margin-top: 0;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.favourite-image {
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 260px;
+}
+.remove-btn {
+  background-color: transparent;
+  border-width: 0;
+  font-family: "poppins";
+  font-size: 15px;
+}
+
+.name-container {
+  text-decoration: none;
+}
+
 

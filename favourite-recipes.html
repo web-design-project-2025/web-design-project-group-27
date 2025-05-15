@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favourite Recipes</title>
-    <script src="js/favouriteRecipes.js" defer></script>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/favouriteRecipes.js" defer></script>
     <!-- playfair display font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,59 +70,9 @@
       </nav>
     </header>
 
-    <main class="fr-page">
-      <!-- Previous Button -->
-      <button id="prev-btn">
-        <img class="back-pic" src="img/Arrow_left.png" alt="Back Button" />
-      </button>
-
-      <!-- Book -->
-      <div id="book" class="book">
-        <!-- paper 1 -->
-        <div id="p1" class="paper">
-          <div class="front">
-            <div id="f1" class="front-content">
-              <h1 class="content-book">Front 1</h1>
-            </div>
-          </div>
-          <div class="back">
-            <div id="b1" class="back-content">
-              <h1 class="content-book">Back 1</h1>
-            </div>
-          </div>
-        </div>
-        <!-- paper 2 -->
-        <div id="p2" class="paper">
-          <div class="front">
-            <div id="f2" class="front-content">
-              <h1 class="content-book">Front 2</h1>
-            </div>
-          </div>
-          <div class="back">
-            <div id="b2" class="back-content">
-              <h1 class="content-book">Back 2</h1>
-            </div>
-          </div>
-        </div>
-        <!-- paper 3 -->
-        <div id="p3" class="paper">
-          <div class="front">
-            <div id="f3" class="front-content">
-              <h1 class="content-book">Front 3</h1>
-            </div>
-          </div>
-          <div class="back">
-            <div id="b3" class="back-content">
-              <h1 class="content-book">Back 3</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Next Button -->
-      <button id="next-btn">
-        <img class="next-pic" src="img/Arrow_right.png" alt="Next Button" />
-      </button>
+    <main>
+      <h1 class="fav-heading">My favourite Recipes:</h1>
+      <div id="favourites-container" class="favourites-grid"></div>
     </main>
 
     <footer>

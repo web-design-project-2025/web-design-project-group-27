@@ -19,27 +19,33 @@
     <header>
       <nav>
         <ul>
-          <a class="button1" href="#">
+          <a class="button1" href="index.html">
             <img
               class="rivia-logo"
               src="img/WDP Logo (RIVIA Recipes).png"
               alt="RIVIA Logo"
             />
           </a>
-          <a class="header-options1" href="#">
+          <a class="header-options1" href="about-us.html">
             <li class="button2">About Us</li>
           </a>
           <div class="header-buttons">
-            <button class="favourites">
-              <img
-                class="favourites-img"
-                src="img/favourites-img.png"
-                alt="Favourite Recipes"
-              />
-            </button>
-            <button class="login">
-              <img class="login-img" src="img/login-img.png" alt="Login" />
-            </button>
+            <a href="favourite-recipes.html"
+              ><button class="favourites">
+                <img
+                  class="favourites-img"
+                  src="img/favourites-img.png"
+                  alt="Favourite Recipes"
+                /></button
+            ></a>
+            <a href="login.html">
+              <button class="login">
+                <img
+                  class="login-img"
+                  src="img/login-img.png"
+                  alt="Login"
+                /></button
+            ></a>
           </div>
         </ul>
       </nav>
@@ -78,7 +84,17 @@
             <span>4</span>
           </div>
           <div class="icon-box">
-            <img src="img/icons/heart.png" alt="Favourite Icon" class="icon" />
+            <button
+              id="favorite-btn"
+              class="favourites"
+              title="Add to favorites"
+            >
+              <img
+                src="img/icons/heart.png"
+                alt="Favourite Icon"
+                class="favourites-img"
+              />
+            </button>
           </div>
         </div>
         <div class="line second-line"></div>
@@ -132,7 +148,7 @@
     <footer>
       <div class="footer-div">
         <h1>Quick Links:</h1>
-        <a class="footer-options" href="#"><p1>About Us</p1></a>
+        <a class="footer-options" href="about-us.html"><p1>About Us</p1></a>
         <a class="footer-options" href="#"><p2>Popular Recipes</p2></a>
         <a href="#"></a>
       </div>
