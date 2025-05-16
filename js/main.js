@@ -36,50 +36,90 @@ if (categoryContainer) {
 }
 
 let recipes = [
-  { name: "Butter Chicken", URL: "recipe.html?id=butterchicken" },
-  { name: "Pasta Bolognese", URL: "recipe.html?id=bolognes" },
-  { name: "Mac & Cheese", URL: "recipe.html?id=macandchees" },
-  { name: "Beef & Broccoli", URL: "recipe.html?id=beefandbroccoli" },
-  { name: "Blood Pudding", URL: "recipe.html?id=bloodpudding" },
-  { name: "Tahchin Morgh", URL: "recipe.html?id=tahchinmorgh" },
-  { name: "Greek Sallad", URL: "recipe.html?id=greeksallad" },
+  { name: "Butter Chicken", URL: "butterchicken.html" },
+  { name: "Pasta Bolognese", URL: "bolognes.html" },
+  { name: "Mac & Cheese", URL: "macandcheese.html" },
+  { name: "Beef & Broccoli", URL: "beefandbroccoli.html" },
+  { name: "Blood Pudding", URL: "bloodpudding.html" },
+  { name: "Tahchin Morgh", URL: "tahchingmorgh.html" },
+  { name: "Greek Sallad", URL: "greeksallad.html" },
+  { name: "Briam", URL: "briam.html" },
+  { name: "Buffalo Wings", URL: "buffalo.html" },
+  { name: "Burger", URL: "burger.html" },
+  { name: "Calzone", URL: "calzone.html" },
+  { name: "Carbonara", URL: "carbonara.html" },
+  { name: "Chicken Cashew", URL: "cashwe.html" },
+  { name: "Casserole", URL: "casserole.html" },
+  { name: "Chana Masala", URL: "chana.html" },
+  { name: "Dopiaza", URL: "dopiaza.html" },
+  { name: "Falu Sausage", URL: "falu.html" },
+  { name: "Fesenjoon", URL: "fesenjoon.html" },
+  { name: "Fried Rice", URL: "friedrice.html" },
+  { name: "Gheime Bademjan", URL: "gheimebademjan.html" },
+  { name: "Ghorme Sabzi", URL: "ghormesabzi.html" },
+  { name: "Kalops", URL: "kalops.html" },
+  { name: "Korma", URL: "korma.html" },
+  { name: "Lubia Polo", URL: "lubiapolo.html" },
+  { name: "Mac & Cheese", URL: "macandcheese.html" },
+  { name: "Chicken Masala", URL: "masala.html" },
+  { name: "Meatballs", URL: "meatballs.html" },
+  { name: "Moussaka", URL: "moussaka.html" },
+  { name: "Nasi Goreng", URL: "nasigoreng.html" },
+  { name: "Pad Thai", URL: "padthai.html" },
+  { name: "Palak Paneer", URL: "palak.html" },
+  { name: "Pepperoni Pizza", URL: "pepperoni.html" },
+  { name: "Pickled Herring", URL: "pickledherring.html" },
+  { name: "Polo Ba Morgh", URL: "polobamorgh.html" },
+  { name: "Pomodoro", URL: "pomodoro.html" },
+  { name: "Ribs", URL: "ribs.html" },
+  { name: "Sandwich Cake", URL: "sadwichcake.html" },
+  { name: "Souvlaki", URL: "souvlaki.html" },
+  { name: "Spring Rolls", URL: "springrolls.html" },
+  { name: "Stiftado", URL: "stiftado.html" },
+  { name: "Tacos", URL: "tacos.html" },
+  { name: "Tahchin Morgh", URL: "tahchinmorgh.html" },
+  { name: "Vesuvio", URL: "vesuvio.html" },
 ];
 
 /* serarch box */
 const resultBox = document.querySelector(".result-box");
 const inputBox = document.getElementById("input-box");
 
+function display(result) {
+  const content = result.map((recipe) => {
+    return `<ul class="search-result" data-url="${recipe.URL}">${recipe.name}</ul>`;
+  });
+  resultBox.innerHTML = "<li>" + content.join("") + "</li>";
+
+  document.querySelectorAll(".search-result").forEach((item) => {
+    item.addEventListener("click", () => {
+      inputBox.value = item.textContent;
+      resultBox.innerHTML = "";
+      window.location.href = item.getAttribute("data-url");
+    });
+  });
+}
+
 if (inputBox) {
   inputBox.onkeyup = function () {
-    let result = [];
     let input = inputBox.value;
     if (input.length) {
-      result = recipes.filter((recipe) => {
-        return recipe.name.toLowerCase().includes(input.toLowerCase());
-      });
-    }
-    display(result);
-
-    if (!result.length) {
+      let result = recipes.filter((recipe) =>
+        recipe.name.toLowerCase().includes(input.toLowerCase())
+      );
+      display(result);
+    } else {
       resultBox.innerHTML = "";
     }
   };
-}
-
-function display(result) {
-  const content = result.map((recipe) => {
-    return `<li onclick="selectInput(this)" data-url="${recipe.url}">${recipe.name}</li>`;
-  });
-
-  resultBox.innerHTML = "<ul>" + content.join("") + "</ul>";
 }
 
 function selectInput(list) {
   inputBox.value = list.innerHTML;
   resultBox.innerHTML = "";
 
-  const targetURL = listItem.getAttribute("data-url");
-  if (targerUtl) {
+  const targetURL = list.getAttribute("data-url");
+  if (targetURL) {
     window.location.href = targetURL;
   }
 }
@@ -111,41 +151,6 @@ fetch("data/popular-recepies.json")
   .catch((error) => {
     console.error("Error loading popular recipes:", error);
   });
-
-/* add to favourite */
-/* document.addEventListener("DOMContentLoaded", function () {
-  const favButton = document.getElementById("favorite-btn");
-
-  if (favButton) {
-    favButton.addEventListener("click", function () {
-      const imageSrc = document.querySelector(".hero-image img")?.src;
-      const title = document.querySelector(".first-text")?.textContent;
-      const pageUrl = window.location.href;
-
-      if (!imageSrc || !title) {
-        alert("Error: Could not find recipe data.");
-        return;
-      }
-
-      const favourite = {
-        image: imageSrc,
-        title: title,
-        url: pageUrl,
-      };
-
-      let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
-      const exists = favourites.some((item) => item.url === pageUrl);
-      if (exists) {
-        alert("Recipe already in your favourites!");
-        return;
-      }
-
-      favourites.push(favourite);
-      localStorage.setItem("favourites", JSON.stringify(favourites));
-      alert("Recipe added to your favourites!");
-    });
-  }
-}); */
 
 document.getElementById("favorite-btn")?.addEventListener("click", () => {
   toggleFavorite();

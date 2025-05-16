@@ -43,6 +43,8 @@ ul {
   font-family: "playfair display";
   padding-left: 0;
   list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .rivia-logo {
@@ -53,6 +55,28 @@ ul {
   color: #e5d7c4;
   font-size: 25px;
   font-family: "playfair";
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.button2::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  content: " ";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: #4c3d19;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.button2:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .header-buttons {
@@ -117,19 +141,20 @@ main {
 }
 
 .search-box {
-  width: 600px;
+  width: 40%;
   background: white;
-  margin: 50px auto 0;
   border-radius: 5px;
-  margin-left: 22.5%;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  margin-right: 10%;
+  margin-left: 25%;
 }
 
 .row {
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  position: relative;
 }
 
 input {
@@ -153,30 +178,48 @@ button .search-icon {
   cursor: pointer;
 }
 
-.result-box ul {
+.result-box li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   border-top: 2px solid #999;
-  padding: 15px 10px;
   display: grid;
   grid-row: inherit;
-  margin: 0;
+  padding: 0;
 }
 
-.result-box ul li {
-  list-style: none;
-  border-radius: 3px;
+.result-box ul li,
+.search-result {
   padding: 15px 10px;
   cursor: pointer;
   font-size: 18px;
   font-family: "lora";
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
 }
 
-.result-box ul li:hover {
+.search-result {
+  margin-right: 100%;
+}
+
+.result-box li ul:hover {
   background: rgb(53, 64, 36, 0.4);
 }
 
 .result-box {
-  max-height: 150px;
-  overflow-y: scroll;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .category-grid {
@@ -186,7 +229,7 @@ button .search-icon {
   gap: 20px;
   padding: 1rem;
   scroll-snap-type: x mandatory;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
   margin-right: 0;
@@ -207,6 +250,9 @@ button .search-icon {
 
 img:hover {
   cursor: pointer;
+  transform: scale(1.07);
+  transition: all ease-in-out;
+  transition-duration: 300ms;
 }
 
 .category-card h3 {
@@ -231,7 +277,6 @@ img:hover {
   font-family: "lora";
   margin-left: 10px;
   margin-bottom: 0px;
-  margin-top: 1rem;
   font-size: 25px;
   font-weight: 200;
   color: #4c3d19;
@@ -318,6 +363,12 @@ p2 {
   border-width: 0;
   font-family: "poppins";
   font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.remove-btn:hover {
+  background-color: rgb(53, 64, 36, 0.7);
 }
 
 #favourites-container {
