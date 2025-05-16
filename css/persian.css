@@ -10,10 +10,12 @@ header {
   background-color: rgb(53, 64, 36, 0.7);
   width: 100%;
 }
+
 .page-container {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .header-options {
   list-style: none;
   text-align: left;
@@ -27,15 +29,18 @@ header {
   align-items: center;
   text-decoration: none;
 }
+
 .header-container {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 ul {
   display: flex;
   flex-direction: row;
@@ -121,8 +126,7 @@ main {
   font-weight: 300;
 }
 
-/* footer */
-
+/* Footer */
 footer {
   width: 100%;
   background-color: rgb(53, 64, 36, 0.7);
@@ -159,11 +163,13 @@ footer {
   padding-left: 15px;
   margin: 5px 0;
 }
+
 .social-icons img {
   width: 50px;
   height: 50px;
   transition: transform 0.2s ease;
 }
+
 h1 {
   font-size: x-large;
   font-weight: 550;
@@ -177,6 +183,7 @@ p2 {
   font-family: "poppins";
 }
 
+/* Grid Layout */
 .persian-food-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -201,6 +208,8 @@ p2 {
   font-family: "poppins";
   font-weight: 400;
 }
+
+/* Section divider */
 .section-lines {
   width: 100%;
   padding: 0 20px;
@@ -220,6 +229,8 @@ p2 {
   margin-top: 1%;
   height: 2px;
 }
+
+/* Filter Section */
 .filter-section {
   display: flex;
   justify-content: center;
@@ -254,4 +265,83 @@ p2 {
   margin-right: 6px;
   transform: scale(1.2);
   accent-color: #4c3d19;
+}
+
+/* === Responsive Styles (Mobile ≤768px) === */
+@media screen and (max-width: 768px) {
+  .page-container,
+  .footer-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .rivia-logo {
+    width: 80px;
+  }
+
+  .favourites,
+  .login {
+    width: 45px;
+    height: 45px;
+  }
+
+  .favourites-img,
+  .login-img {
+    width: 65%;
+  }
+
+  .button2 {
+    font-size: 20px;
+  }
+
+  .wtr-text {
+    font-size: 180%;
+  }
+
+  .intro-text {
+    font-size: 95%;
+  }
+
+  .persian-food-grid {
+    grid-template-columns: 1fr;
+    padding: 5%;
+    gap: 30px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-div {
+    padding: 0 20px;
+    max-width: none;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .filter-options {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filter-options label {
+    font-size: 16px;
+  }
+
+  .filter-label {
+    font-size: 18px;
+    text-align: center;
+  }
 }
