@@ -286,14 +286,14 @@ img:hover {
 }
 /* footer */
 
-@media screen (max-width: 736) {
+@media screen and (max-width: 736) {
   .footer-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media screen (min-width: 1287) {
+@media screen and (min-width: 1287) {
   .footer-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
