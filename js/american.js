@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       triviaElement.textContent = "Could not load trivia at the moment.";
     });
 });
-
+// The following lines are inspired by //www.youtube.com/watch?v=DfUHpQIjVsg
 let allFoods = [];
 
 function renderFoods(foods) {
