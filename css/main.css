@@ -191,7 +191,6 @@ button .search-icon {
 
 .result-box ul li,
 .search-result {
-  padding: 15px 10px;
   cursor: pointer;
   font-size: 18px;
   font-family: "lora";

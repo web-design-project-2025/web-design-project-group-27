@@ -41,7 +41,6 @@ let recipes = [
   { name: "Mac & Cheese", URL: "macandcheese.html" },
   { name: "Beef & Broccoli", URL: "beefandbroccoli.html" },
   { name: "Blood Pudding", URL: "bloodpudding.html" },
-  { name: "Tahchin Morgh", URL: "tahchingmorgh.html" },
   { name: "Greek Sallad", URL: "greeksallad.html" },
   { name: "Briam", URL: "briam.html" },
   { name: "Buffalo Wings", URL: "buffalo.html" },
