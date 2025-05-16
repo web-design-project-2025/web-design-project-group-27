@@ -452,7 +452,7 @@ h1 {
 }
 .team-member img {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 5%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 

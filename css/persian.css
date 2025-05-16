@@ -267,7 +267,6 @@ p2 {
   accent-color: #4c3d19;
 }
 
-/* === Responsive Styles (Mobile ≤768px) === */
 @media screen and (max-width: 768px) {
   .page-container,
   .footer-container {
