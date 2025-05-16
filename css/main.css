@@ -123,7 +123,7 @@ main {
 }
 
 .intro-text-container {
-  margin-right: 16%;
+  margin-right: 6%;
   margin-left: 6%;
 }
 
@@ -286,17 +286,161 @@ img:hover {
 }
 /* footer */
 
-@media screen and (max-width: 736) {
+@media screen and (max-width: 480px /*safe for phones to use*/) {
+  .page-container,
+  .footer-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .rivia-logo {
+    width: 80px;
+  }
+
+  .favourites,
+  .login {
+    width: 45px;
+    height: 45px;
+  }
+
+  .favourites-img,
+  .login-img {
+    width: 65%;
+  }
+
+  .button2 {
+    font-size: 20px;
+  }
+
+  .wtr-text {
+    font-size: 180%;
+    text-align: center;
+  }
+
+  .hungry {
+    text-align: center;
+    margin: 0;
+  }
+
+  .intro-text-container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .intro-text {
+    font-size: 95%;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .category-grid {
+    flex-direction: row;
+    gap: 1.5rem;
+    overflow-x: visible;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
   .footer-div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    max-width: 90%;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    font-family: "poppins";
+  }
+
+  .footer-options,
+  .contact-info {
+    font-size: 14px;
+    padding-left: 0;
+    margin: 5px 0;
+    font-family: "poppins";
   }
 }
 
-@media screen and (min-width: 1287) {
+@media screen and (min-width: 1600px /* designed for 4k/ultrawide screens */) {
+  .page-container,
+  .footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 30px;
+  }
+
   .footer-div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
+    padding: 0 20px;
+    font-family: "poppins";
+  }
+
+  .rivia-logo {
+    width: 100px;
+  }
+
+  .favourites,
+  .login {
+    width: 55px;
+    height: 55px;
+  }
+
+  .favourites-img,
+  .login-img {
+    width: 70%;
+  }
+
+  .wtr-text {
+    font-size: 50px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .hungry {
+    margin-right: 0;
+  }
+
+  .intro-text {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .search-box {
+    width: 600px;
+    margin: 50px auto;
+  }
+
+  .category-grid {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .social-icons img {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -390,7 +534,7 @@ p2 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 30px;
   text-align: left;
 }
 
@@ -420,7 +564,7 @@ p2 {
 h1 {
   font-size: x-large;
   font-weight: 550;
-  font-family: "Lora";
+  font-family: "poppins";
   color: #e5d7c4;
 }
 .intro-text::first-letter {
